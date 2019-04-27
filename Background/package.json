@@ -1,0 +1,19 @@
+{
+  "name": "comp90024",
+  "version": "0.1.0-SNAPSHOT",
+  "description": "Building and pushing CouchDB design documents",
+  "private": true,
+  "author": {
+    "name": "Luca Morandini",
+    "email": "luca.morandini@unimelb.edu.au"
+  },
+  "engines": {
+    "node": ">= 6.12.x",
+    "npm": ">= 3.10.x"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "1.3.x",
+    "grunt-couch": "^1.5.1"
+  }
+}

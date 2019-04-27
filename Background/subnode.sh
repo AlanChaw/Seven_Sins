@@ -14,3 +14,6 @@ docker exec ${cont} bash -c "echo \"-name couchdb@${node}\" >> /opt/couchdb/etc/
 
 docker restart ${cont[0]}
 sleep 3
+
+curl -X PUT "http://${node}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
+curl -X PUT "http://${user}:${password}@${node}:5984/_node/couchdb@${node}/_config/chttpd/bind_address" --data '"0.0.0.0"'

@@ -15,7 +15,7 @@ module.exports = function (grunt) {
         },
         twitter: {
           files: {
-            "http://localhost:5984/twitter": "/tmp/twitter.json"
+            "http://admin:123456@localhost:5984/twitter": "/tmp/twitter.json"
           }
         }
       }

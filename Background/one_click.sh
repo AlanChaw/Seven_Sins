@@ -44,3 +44,7 @@ cd /home/ubuntu/90024/Background
 npm install grunt --save-dev
 npm install grunt-cli --save-dev
 npm install grunt-couch --save-dev
+
+
+grunt couch-compile
+grunt couch-push

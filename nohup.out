@@ -1,0 +1,170 @@
+[I 15:00:34.670 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 15:00:34.671 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024
+[I 15:00:34.671 NotebookApp] The Jupyter Notebook is running at:
+[I 15:00:34.671 NotebookApp] http://localhost:8888/?token=978e6f0ad6898829e918dc2e1952938c09a2983ed8333668
+[I 15:00:34.671 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:00:34.678 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-6217-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=978e6f0ad6898829e918dc2e1952938c09a2983ed8333668
+[I 15:00:48.949 NotebookApp] Creating new notebook in 
+[I 15:00:50.033 NotebookApp] Kernel started: 82a74e87-3bf8-49f5-b018-42b902517722
+[W 15:00:50.055 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190425150034 (::1) 15.31ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 15:00:50.717 NotebookApp] Adapting to protocol v5.1 for kernel 82a74e87-3bf8-49f5-b018-42b902517722
+[W 15:01:02.503 NotebookApp] 404 GET /api/contents/GruntNote.ipynb?type=notebook&content=0&_=1556168449732 (::1): No such file or directory: GruntNote.ipynb
+[W 15:01:02.503 NotebookApp] No such file or directory: GruntNote.ipynb
+[W 15:01:02.504 NotebookApp] 404 GET /api/contents/GruntNote.ipynb?type=notebook&content=0&_=1556168449732 (::1) 1.76ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 15:01:02.510 NotebookApp] Uploading file to /GruntNote.ipynb
+[I 15:09:33.421 NotebookApp] Saving file at /GruntNote.ipynb
+[I 15:09:33.442 NotebookApp] Saving file at /GruntNote.ipynb
+[I 15:09:33.457 NotebookApp] Saving file at /GruntNote.ipynb
+[I 15:09:33.470 NotebookApp] Saving file at /GruntNote.ipynb
+[I 15:12:24.081 NotebookApp] Kernel started: dff2ea20-5352-46ad-8f31-4d76f856d3e8
+[W 15:12:24.115 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190425150034 (::1) 2.60ms referer=http://localhost:8888/notebooks/CouchdbNote.ipynb
+[I 15:12:24.836 NotebookApp] Adapting to protocol v5.1 for kernel dff2ea20-5352-46ad-8f31-4d76f856d3e8
+[I 16:16:34.531 NotebookApp] Saving file at /GruntNote.ipynb
+[I 16:18:07.992 NotebookApp] Saving file at /GruntNote.ipynb
+[I 16:18:09.457 NotebookApp] Saving file at /GruntNote.ipynb
+[I 16:19:20.082 NotebookApp] Starting buffering for dff2ea20-5352-46ad-8f31-4d76f856d3e8:6132d7b563a64eb38f3075d3a593e9e6
+[I 16:19:20.652 NotebookApp] Starting buffering for 82a74e87-3bf8-49f5-b018-42b902517722:f18ff87733724d818276409811ec734a
+[C 20:43:54.343 NotebookApp] received signal 15, stopping
+[I 20:43:54.346 NotebookApp] Shutting down 2 kernels
+[I 20:43:54.548 NotebookApp] Kernel shutdown: 82a74e87-3bf8-49f5-b018-42b902517722
+[I 20:43:54.550 NotebookApp] Kernel shutdown: dff2ea20-5352-46ad-8f31-4d76f856d3e8
+[I 11:09:02.594 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 11:09:02.595 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024
+[I 11:09:02.595 NotebookApp] The Jupyter Notebook is running at:
+[I 11:09:02.595 NotebookApp] http://localhost:8888/?token=b23154d5e8be2941e0a394b879bdd705a16b6a81e0eaf00e
+[I 11:09:02.595 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 11:09:02.601 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-1520-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=b23154d5e8be2941e0a394b879bdd705a16b6a81e0eaf00e
+[I 11:09:37.866 NotebookApp] Kernel started: 17d6afe4-ceea-48ec-a5b6-13e2fbb04dc4
+[W 11:09:37.881 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190426110901 (::1) 11.62ms referer=http://localhost:8888/notebooks/GruntNote.ipynb
+[I 11:09:38.650 NotebookApp] Adapting to protocol v5.1 for kernel 17d6afe4-ceea-48ec-a5b6-13e2fbb04dc4
+[I 11:09:41.627 NotebookApp] Starting buffering for 17d6afe4-ceea-48ec-a5b6-13e2fbb04dc4:c12ee14700b9429299af383fd405675e
+[I 11:09:47.752 NotebookApp] Kernel started: 15d92591-41be-42d4-8428-15464ea0623a
+[W 11:09:47.773 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190426110901 (::1) 4.24ms referer=http://localhost:8888/notebooks/Untitled.ipynb
+[I 11:09:48.435 NotebookApp] Adapting to protocol v5.1 for kernel 15d92591-41be-42d4-8428-15464ea0623a
+[I 11:09:49.426 NotebookApp] Starting buffering for 15d92591-41be-42d4-8428-15464ea0623a:850df70d74214b62982c949c716c1ff8
+[W 11:09:56.018 NotebookApp] delete /Untitled.ipynb
+[I 11:10:07.083 NotebookApp] Kernel shutdown: 17d6afe4-ceea-48ec-a5b6-13e2fbb04dc4
+[I 11:10:07.925 NotebookApp] Kernel shutdown: 15d92591-41be-42d4-8428-15464ea0623a
+[I 11:10:16.085 NotebookApp] Kernel started: d7b508e3-460d-4026-8990-6191a036e653
+[W 11:10:16.132 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190426110901 (::1) 4.41ms referer=http://localhost:8888/notebooks/CouchdbNote.ipynb
+[I 11:10:16.810 NotebookApp] Adapting to protocol v5.1 for kernel d7b508e3-460d-4026-8990-6191a036e653
+[I 11:23:27.623 NotebookApp] Starting buffering for d7b508e3-460d-4026-8990-6191a036e653:829b107aa26c4efe9bc6396e049971a1
+[I 11:28:58.270 NotebookApp] 302 GET / (::1) 0.61ms
+[I 11:29:01.585 NotebookApp] Adapting to protocol v5.1 for kernel d7b508e3-460d-4026-8990-6191a036e653
+[W 11:29:01.599 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190426110901 (::1) 1.98ms referer=http://localhost:8888/notebooks/CouchdbNote.ipynb
+[I 11:31:02.320 NotebookApp] Saving file at /CouchdbNote.ipynb
+[I 13:13:13.284 NotebookApp] Starting buffering for d7b508e3-460d-4026-8990-6191a036e653:fcfd947ce9df4f1d84b9d746fb35304b
+[I 14:10:08.073 NotebookApp] 302 GET / (::1) 0.49ms
+[W 14:10:10.848 NotebookApp] Notebook CouchdbNote.ipynb is not trusted
+[I 14:10:11.431 NotebookApp] Adapting to protocol v5.1 for kernel d7b508e3-460d-4026-8990-6191a036e653
+[W 14:10:11.447 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190426110901 (::1) 2.91ms referer=http://localhost:8888/notebooks/CouchdbNote.ipynb
+[I 14:12:11.949 NotebookApp] Saving file at /CouchdbNote.ipynb
+[I 14:16:11.946 NotebookApp] Saving file at /CouchdbNote.ipynb
+[I 16:04:12.251 NotebookApp] Saving file at /CouchdbNote.ipynb
+[I 16:04:17.334 NotebookApp] Starting buffering for d7b508e3-460d-4026-8990-6191a036e653:309bdd7bb4534e7abe53e666b415b0b7
+[W 16:04:22.228 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190426110901 (::1) 1.80ms referer=http://localhost:8888/notebooks/CouchdbNote.ipynb
+[I 16:04:22.934 NotebookApp] Adapting to protocol v5.1 for kernel d7b508e3-460d-4026-8990-6191a036e653
+[I 16:04:41.916 NotebookApp] Saving file at /CouchdbNote.ipynb
+[I 16:04:42.775 NotebookApp] Starting buffering for d7b508e3-460d-4026-8990-6191a036e653:61aec1dcc303477bb291e462758716e5
+[I 10:12:31.189 NotebookApp] The port 8888 is already in use, trying another port.
+[I 10:12:31.191 NotebookApp] The port 8889 is already in use, trying another port.
+[I 10:12:31.233 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 10:12:31.233 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024
+[I 10:12:31.233 NotebookApp] The Jupyter Notebook is running at:
+[I 10:12:31.233 NotebookApp] http://localhost:8890/?token=2f4184e02ced3a7d598c9ff9b27509048ce549f5f701357d
+[I 10:12:31.233 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 10:12:31.239 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-6830-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=2f4184e02ced3a7d598c9ff9b27509048ce549f5f701357d
+[W 10:12:37.222 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190427101230 (::1) 9.57ms referer=http://localhost:8890/notebooks/GruntNote.ipynb
+[I 10:12:37.567 NotebookApp] Kernel started: ce19d680-420b-4c12-acee-49a44e2abb16
+[I 10:12:38.344 NotebookApp] Adapting to protocol v5.1 for kernel ce19d680-420b-4c12-acee-49a44e2abb16
+[I 10:14:37.544 NotebookApp] Saving file at /GruntNote.ipynb
+[W 10:15:50.497 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190427101230 (::1) 2.33ms referer=http://localhost:8890/notebooks/CouchdbNote.ipynb
+[I 10:15:51.136 NotebookApp] Kernel started: 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c
+[I 10:15:51.903 NotebookApp] Adapting to protocol v5.1 for kernel 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c
+[I 10:16:37.352 NotebookApp] Saving file at /CouchdbNote.ipynb
+[I 10:16:37.397 NotebookApp] Starting buffering for 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c:285f2c9dafe7439988147f0eb77f9714
+[I 10:16:37.995 NotebookApp] Starting buffering for ce19d680-420b-4c12-acee-49a44e2abb16:2d278d7f573642d59e0c81c30fbd472f
+[I 10:18:25.225 NotebookApp] Creating new file in 
+[I 10:19:19.061 NotebookApp] Creating new notebook in 
+[I 10:19:19.844 NotebookApp] Kernel started: 11157e67-db00-43b7-a3e3-048727383d79
+[W 10:19:19.854 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190427101230 (::1) 6.92ms referer=http://localhost:8890/notebooks/Untitled.ipynb?kernel_name=python3
+[I 10:19:20.525 NotebookApp] Adapting to protocol v5.1 for kernel 11157e67-db00-43b7-a3e3-048727383d79
+[I 10:21:20.531 NotebookApp] Saving file at /Untitled.ipynb
+[W 10:21:24.575 NotebookApp] delete /untitled.txt
+[I 10:28:28.996 NotebookApp] Adapting to protocol v5.1 for kernel ce19d680-420b-4c12-acee-49a44e2abb16
+[W 10:28:29.009 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190427101230 (::1) 5.11ms referer=http://localhost:8890/notebooks/GruntNote.ipynb
+[I 11:01:20.290 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:03:21.294 NotebookApp] Saving file at /Untitled.ipynb
+[W 11:20:42.545 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190427101230 (::1) 2.09ms referer=http://localhost:8890/notebooks/CouchdbNote.ipynb
+[I 11:20:43.230 NotebookApp] Adapting to protocol v5.1 for kernel 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c
+[I 11:20:51.641 NotebookApp] Starting buffering for 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c:2675d740deef47178138c6b32a81c235
+[I 11:31:20.748 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:37:19.869 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:39:20.542 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:40:29.551 NotebookApp] Saving file at /GruntNote.ipynb
+[I 11:41:19.857 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:43:19.856 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:45:19.857 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:47:20.556 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:48:29.552 NotebookApp] Saving file at /GruntNote.ipynb
+[I 11:49:19.861 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:51:19.857 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:52:29.554 NotebookApp] Saving file at /GruntNote.ipynb
+[I 11:53:11.226 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:55:19.863 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:57:19.863 NotebookApp] Saving file at /Untitled.ipynb
+[I 11:59:19.862 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:25:57.887 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:27:57.712 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:29:58.392 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:31:57.710 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:33:58.394 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:35:58.395 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:39:58.407 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:43:57.714 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:45:57.712 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:47:57.715 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:49:57.716 NotebookApp] Saving file at /Untitled.ipynb
+[I 13:51:57.716 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:17:58.745 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:21:00.523 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:21:03.459 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:37:57.721 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:39:57.724 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:41:57.724 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:43:57.721 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:45:52.770 NotebookApp] Starting buffering for ce19d680-420b-4c12-acee-49a44e2abb16:7445cbef3e3146d687aac779ce0543bb
+[I 14:45:54.604 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:45:54.840 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:45:55.011 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:47:57.726 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:49:57.725 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:55:57.722 NotebookApp] Saving file at /Untitled.ipynb
+[I 14:57:59.184 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:03:57.729 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:05:57.850 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:23:57.730 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:25:58.414 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:27:57.732 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:29:58.032 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:31:57.733 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:33:58.416 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:37:58.449 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:39:58.615 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:41:58.818 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:07:22.657 NotebookApp] Starting buffering for 11157e67-db00-43b7-a3e3-048727383d79:ea4c14d0e6604b49a21426589cf0b870

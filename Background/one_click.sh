@@ -12,6 +12,9 @@ git checkout origin/Background
 # create couchdb and push data to couchdb
 curl -X PUT http://admin:123456@localhost:5984/twitter
 curl -X POST "http://admin:123456@localhost:5984/twitter/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/melb.json
+curl -X PUT http://admin:123456@localhost:5984/geo_origin
+curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/origin_melb.json
+
 
 
 

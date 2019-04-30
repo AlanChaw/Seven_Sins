@@ -176,3 +176,19 @@
 [I 10:41:59.382 NotebookApp] Kernel shutdown: 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c
 [I 10:41:59.383 NotebookApp] Kernel shutdown: 11157e67-db00-43b7-a3e3-048727383d79
 [I 10:41:59.388 NotebookApp] Kernel shutdown: d7b508e3-460d-4026-8990-6191a036e653
+[I 10:40:12.958 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 10:40:12.959 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024
+[I 10:40:12.959 NotebookApp] The Jupyter Notebook is running at:
+[I 10:40:12.959 NotebookApp] http://localhost:8888/?token=97e6d73369622263252ca796c438565f0124fa6f0dab7b8e
+[I 10:40:12.959 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 10:40:12.966 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-9745-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=97e6d73369622263252ca796c438565f0124fa6f0dab7b8e
+[I 10:40:19.083 NotebookApp] Saving file at /Untitled.ipynb
+[I 10:40:24.137 NotebookApp] Kernel started: 0f8ad24c-6d26-4fac-af70-d8d1586ed947
+[W 10:40:24.486 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190430104012 (::1) 10.61ms referer=http://localhost:8888/notebooks/Untitled.ipynb
+[I 10:40:24.888 NotebookApp] Adapting to protocol v5.1 for kernel 0f8ad24c-6d26-4fac-af70-d8d1586ed947
+[I 10:42:24.397 NotebookApp] Saving file at /Untitled.ipynb

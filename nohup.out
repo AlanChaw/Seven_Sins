@@ -168,3 +168,11 @@
 [I 15:39:58.615 NotebookApp] Saving file at /Untitled.ipynb
 [I 15:41:58.818 NotebookApp] Saving file at /Untitled.ipynb
 [I 16:07:22.657 NotebookApp] Starting buffering for 11157e67-db00-43b7-a3e3-048727383d79:ea4c14d0e6604b49a21426589cf0b870
+[C 10:41:58.948 NotebookApp] received signal 15, stopping
+[I 10:41:58.960 NotebookApp] Shutting down 3 kernels
+[C 10:41:58.956 NotebookApp] received signal 15, stopping
+[I 10:41:58.969 NotebookApp] Shutting down 1 kernel
+[I 10:41:59.380 NotebookApp] Kernel shutdown: ce19d680-420b-4c12-acee-49a44e2abb16
+[I 10:41:59.382 NotebookApp] Kernel shutdown: 78d9a7d4-e13b-4167-b69d-ce1a07b0a03c
+[I 10:41:59.383 NotebookApp] Kernel shutdown: 11157e67-db00-43b7-a3e3-048727383d79
+[I 10:41:59.388 NotebookApp] Kernel shutdown: d7b508e3-460d-4026-8990-6191a036e653

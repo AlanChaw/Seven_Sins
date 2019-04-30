@@ -1,6 +1,7 @@
 
 
 # check out git code to server (assume that docker and couchdb are ready)
+cd ~
 sudo apt-get install git
 git init
 git clone http://AlanChaw:binbin1124@github.com/AlanChaw/90024.git

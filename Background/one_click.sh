@@ -8,7 +8,10 @@ git clone http://AlanChaw:binbin1124@github.com/AlanChaw/90024.git
 cd 90024/
 git checkout origin/Background
 
-
+# solve cross-origin problem
+curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_config/httpd/enable_cors -d '"true"'
+curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_config/cors/origins -d '"*"'
+curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_config/cors/methods -d '"GET, PUT, POST, HEAD, DELETE"'
 
 # create couchdb and push data to couchdb
 curl -X PUT http://admin:123456@localhost:5984/twitter

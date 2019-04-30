@@ -3,7 +3,8 @@ function (doc) {
   count = Math.floor(Math.random() * 1000)
   properties = {
     "name": doc.properties.name,
-    "cartodb_id": doc.properties.cartodb_id
+    "count": count
+    // "cartodb_id": doc.properties.cartodb_id
   }
-  emit(properties, count);
+  emit(properties, 0);
 }

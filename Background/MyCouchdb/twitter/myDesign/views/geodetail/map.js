@@ -1,10 +1,18 @@
 function (doc) {
   // var count = 5000;
-  count = Math.floor(Math.random() * 1000)
-  properties = {
+  positive = Math.floor(Math.random() * 1000)
+  negative = Math.floor(Math.random() * 1000)
+  neutral = Math.floor(Math.random() * 1000)
+  total = positive + negative + neutral
+  key = {
     "name": doc.properties.name,
-    "count": count
     // "cartodb_id": doc.properties.cartodb_id
   }
-  emit(properties, 0);
+  values = {
+    "positive": positive,
+    "negative": negative,
+    "neutral": neutral,
+    "total": total
+  }
+  emit(properties, values);
 }

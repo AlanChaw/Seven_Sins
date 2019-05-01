@@ -5,7 +5,7 @@ function (doc) {
   neutral = Math.floor(Math.random() * 1000)
   total = positive + negative + neutral
   key = {
-    "name": doc.properties.name,
+    "name": doc.properties.SA2_NAME16,
     // "cartodb_id": doc.properties.cartodb_id
   }
   values = {
@@ -14,5 +14,5 @@ function (doc) {
     "neutral": neutral,
     "total": total
   }
-  emit(properties, values);
+  emit(key, values);
 }

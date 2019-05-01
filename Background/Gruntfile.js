@@ -4,7 +4,8 @@ module.exports = function (grunt) {
       "couch-compile": {
         dbs: {
           files: {
-            "/tmp/twitter.json": "MyCouchdb/twitter/myDesign"
+            "/tmp/twitter.json": "MyCouchdb/twitter/myDesign",
+            "/tmp/aurin.json": "MyCouchdb/aurin/myDesign"
           }
         }
       },
@@ -15,7 +16,8 @@ module.exports = function (grunt) {
         },
         twitter: {
           files: {
-            "http://admin:123456@localhost:5984/twitter": "/tmp/twitter.json"
+            "http://admin:123456@localhost:5984/twitter": "/tmp/twitter.json",
+            "http://admin:123456@localhost:5984/aurin": "/tmp/aurin.json"
           }
         }
       }

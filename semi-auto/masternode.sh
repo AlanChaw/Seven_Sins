@@ -28,4 +28,9 @@ curl -X POST "http://${user}:${pass}@localhost:${master_port}/_cluster_setup" -H
 
 curl http://${user}:${pass}@localhost:${master_port}/_cluster_setup
 
+echo "== Allow cross-domain access =="
+curl -X PUT http://${user}:${pass}@127.0.0.1:5984/_node/couchdb@127.0.0.1:5984/_config/httpd/enable_cors -d '"true"'
+curl -X PUT http://${user}:${pass}@127.0.0.1:5984/_node/couchdb@127.0.0.1:5984/_config/cors/origins -d '"*"'
+curl -X PUT http://${user}:${pass}@127.0.0.1:5984/_node/couchdb@127.0.0.1:5984/_config/cors/methods -d '"GET, PUT, POST, HEAD, DELETE"'
+
 for port in "${ports[@]}"; do  curl -X GET http://${user}:${pass}@localhost:${port}/_membership; done

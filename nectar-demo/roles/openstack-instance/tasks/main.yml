@@ -16,4 +16,4 @@
 
 - debug:
     msg: "Instance {{ instance_name }} has been created. IP address is {{ os_instance.openstack.public_v4 }}"
-  when: os_instance.open_stack is defined
+  when: os_instance.openstack is defined

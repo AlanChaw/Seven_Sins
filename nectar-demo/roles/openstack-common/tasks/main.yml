@@ -16,9 +16,9 @@
     name: ['pip']
     state: latest
 
-# pip install openstack
-- name: install openstack
+# pip install openstacksdk
+- name: install openstacksdk
   become: yes
   pip:
-    name: ['openstack']
+    name: ['openstacksdk']
     state: latest  

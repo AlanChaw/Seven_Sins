@@ -1,5 +1,5 @@
 # common variables
-availability_zone: melbourne-np
+availability_zone: melbourne-qh2-uom
 
 # volume
 volumes:
@@ -14,7 +14,7 @@ security_groups:
     description: "Demo security group for SSH access"
     protocol: tcp
     port_range_min: 22
-    prot_range_max: 22
+    port_range_max: 22
     remote_ip_prefix: 0.0.0.0/0
   - name: demo_http
     description: "Demo security group for HTTP"

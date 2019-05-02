@@ -1,0 +1,42 @@
+version: "3.7"
+services:
+  couch_master:
+    image: "couchdb:2.3.0"
+    restart: always
+    ports:
+      - "5984:5984"
+      - "5986:5986"
+      - "4369:4369"
+      - "9100-9200:9100-9200"
+    links:
+      - couch_slave
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=123456
+      - NODENAME=115.146.92.157
+    container_name: couch_master
+    networks:
+      couchdb_nw:
+        ipv4_address: 115.146.92.157
+  couch_slave:
+    image: "couchdb:2.3.0"
+    restart: always
+    ports:
+      - "5984:5984"
+      - "5986:5986"
+      - "4369:4369"
+      - "9100-9200:9100-9200"
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=123456
+      - NODENAME=115.146.92.123
+    container_name: couch_slave
+    networks:
+      couchdb_nw:
+        ipv4_address: 115.146.92.123
+networks:
+  couchdb_nw:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "115.146.92.0/16"

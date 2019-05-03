@@ -6,13 +6,13 @@ This is our CCC project respository.
 
 1. manually config distributed couchdb cluster
 
-note/cluster_configuration_manual_version.md
+`note/cluster_configuration_manual_version.md`
 
 2. semi-auto config distributed couchdb cluster
 
-semi-auto/
+`semi-auto/`
 
 3. apply one instance via Ansible
 
-single-nectar-demo/
+`single-nectar-demo/`
 

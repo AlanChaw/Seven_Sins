@@ -16,3 +16,7 @@ This is our CCC project respository.
 
 `single-nectar-demo/`
 
+4. apply multiple instances on nectar via Ansible
+
+`multiple-instances-demo/`
+

@@ -1,0 +1,10 @@
+- hosts: localhost
+  vars_files:
+    - variables/variables.yml
+  gather_facts: true
+
+  roles:
+    - role: openstack-common
+    - role: openstack-images
+    - role: openstack-security-groups
+    - role: openstack-instance

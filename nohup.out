@@ -222,3 +222,44 @@
 [I 01:20:21.500 NotebookApp] Shutting down 2 kernels
 [I 01:20:21.809 NotebookApp] Kernel shutdown: 0f8ad24c-6d26-4fac-af70-d8d1586ed947
 [I 01:20:21.811 NotebookApp] Kernel shutdown: a60d6a40-12b0-4752-bae6-e575ada195c6
+[I 18:03:27.910 NotebookApp] The port 8888 is already in use, trying another port.
+[I 18:03:27.935 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 18:03:27.935 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024
+[I 18:03:27.935 NotebookApp] The Jupyter Notebook is running at:
+[I 18:03:27.936 NotebookApp] http://localhost:8889/?token=ecfd4d30206487f2297dbede6586ad59931903a6fedfd022
+[I 18:03:27.936 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:03:27.940 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-4708-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=ecfd4d30206487f2297dbede6586ad59931903a6fedfd022
+[I 18:03:36.208 NotebookApp] Kernel started: 0b088d07-f9d0-4244-af4c-424b76f9d1f0
+[W 18:03:36.501 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190504180327 (::1) 16.48ms referer=http://localhost:8889/notebooks/Preprocess/Preprocess.ipynb
+[I 18:03:37.150 NotebookApp] Adapting to protocol v5.1 for kernel 0b088d07-f9d0-4244-af4c-424b76f9d1f0
+[I 18:05:36.188 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:07:36.649 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:09:36.185 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:11:36.185 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:13:36.185 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:14:32.845 NotebookApp] Starting buffering for 0b088d07-f9d0-4244-af4c-424b76f9d1f0:fc5c2073fd144d56ab3a86a125dc6137
+[I 18:14:33.576 NotebookApp] Kernel restarted: 0b088d07-f9d0-4244-af4c-424b76f9d1f0
+[I 18:14:34.187 NotebookApp] Adapting to protocol v5.1 for kernel 0b088d07-f9d0-4244-af4c-424b76f9d1f0
+[I 18:14:34.188 NotebookApp] Restoring connection for 0b088d07-f9d0-4244-af4c-424b76f9d1f0:fc5c2073fd144d56ab3a86a125dc6137
+[I 18:14:34.188 NotebookApp] Replaying 6 buffered messages
+[I 18:15:36.481 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:19:17.987 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:19:21.251 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:19:22.200 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:29:36.186 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:31:36.193 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:33:37.182 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:34:27.941 NotebookApp] Starting buffering for 0b088d07-f9d0-4244-af4c-424b76f9d1f0:fc5c2073fd144d56ab3a86a125dc6137
+[I 18:34:28.471 NotebookApp] Kernel restarted: 0b088d07-f9d0-4244-af4c-424b76f9d1f0
+[I 18:34:29.138 NotebookApp] Adapting to protocol v5.1 for kernel 0b088d07-f9d0-4244-af4c-424b76f9d1f0
+[I 18:34:29.139 NotebookApp] Restoring connection for 0b088d07-f9d0-4244-af4c-424b76f9d1f0:fc5c2073fd144d56ab3a86a125dc6137
+[I 18:34:29.139 NotebookApp] Replaying 5 buffered messages
+[I 18:35:37.659 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:39:17.749 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:39:18.690 NotebookApp] Saving file at /Preprocess/Preprocess.ipynb
+[I 18:39:19.713 NotebookApp] Starting buffering for 0b088d07-f9d0-4244-af4c-424b76f9d1f0:fc5c2073fd144d56ab3a86a125dc6137

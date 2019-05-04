@@ -1,0 +1,11 @@
+[I 18:02:13.262 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 18:02:13.263 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Background
+[I 18:02:13.263 NotebookApp] The Jupyter Notebook is running at:
+[I 18:02:13.263 NotebookApp] http://localhost:8888/?token=3b25cd6efbf1ea7be370d862bd2bcf5c1c90fc04132939ee
+[I 18:02:13.263 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:02:13.269 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-4224-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=3b25cd6efbf1ea7be370d862bd2bcf5c1c90fc04132939ee

@@ -20,3 +20,7 @@ This is our CCC project respository.
 
 `multiple-instances-demo/`
 
+5. copy bash files to remote VM and execute
+
+`upload-and-execute-demo`
+

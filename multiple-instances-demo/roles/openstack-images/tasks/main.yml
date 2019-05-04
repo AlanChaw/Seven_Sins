@@ -1,4 +1,5 @@
 # show all available openstack images
+
 - name: retrieve all available openstack images
   os_image_facts:
 

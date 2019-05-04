@@ -216,3 +216,9 @@
 [W 23:30:40.216 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190430104012 (::1) 2.13ms referer=http://localhost:8888/notebooks/Untitled.ipynb
 [I 23:32:40.212 NotebookApp] Saving file at /Untitled.ipynb
 [I 23:42:40.227 NotebookApp] Saving file at /Untitled.ipynb
+[I 00:00:38.691 NotebookApp] Starting buffering for 0f8ad24c-6d26-4fac-af70-d8d1586ed947:6b0ccc5984074e259f68d8c31ffcc26c
+[I 00:00:39.024 NotebookApp] Starting buffering for a60d6a40-12b0-4752-bae6-e575ada195c6:97b1e1b4e19c4bf0833e9a09ad1dd8df
+[C 01:20:21.493 NotebookApp] received signal 15, stopping
+[I 01:20:21.500 NotebookApp] Shutting down 2 kernels
+[I 01:20:21.809 NotebookApp] Kernel shutdown: 0f8ad24c-6d26-4fac-af70-d8d1586ed947
+[I 01:20:21.811 NotebookApp] Kernel shutdown: a60d6a40-12b0-4752-bae6-e575ada195c6

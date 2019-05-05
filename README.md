@@ -22,9 +22,9 @@ This is our CCC project respository.
 
 5. copy bash files to remote VM and execute
 
-`upload-and-execute-demo`
+`upload-and-execute-demo/`
 
 6. use ansible to install docker and docker-compose on the remote server
 
-`docker-install-demo`
+`docker-install-demo/`
 

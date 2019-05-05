@@ -23,3 +23,11 @@ playbook folder
 
 ---
 
+目前的投机Solution
+
+在最终的`run.sh`中，首先第一阶段的ansible文件，生成4个instance并将其IP地址输出到一个临时文件中，之后执行一个Python脚本读取IP地址并生成inventory文件，之后再运行安装环境的yaml文件
+
+ansible的lineinfile可以做输出，可以考虑是否能合并到一步完成
+
+---
+

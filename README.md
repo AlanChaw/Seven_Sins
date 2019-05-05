@@ -24,3 +24,7 @@ This is our CCC project respository.
 
 `upload-and-execute-demo`
 
+6. use ansible to install docker and docker-compose on the remote server
+
+`docker-install-demo`
+

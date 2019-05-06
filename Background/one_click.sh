@@ -1,6 +1,6 @@
 
 
-# check out git code to server (assume that docker and couchdb are ready)
+# check out git code to server (assume that docker and couchdb containers are deployed)
 cd ~
 sudo apt-get install git
 git init
@@ -13,9 +13,9 @@ curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_con
 curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_config/cors/origins -d '"*"'
 curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_config/cors/methods -d '"GET, PUT, POST, HEAD, DELETE"'
 
-# create couchdb and push data to couchdb
-curl -X PUT http://admin:123456@localhost:5984/twitter
-curl -X POST "http://admin:123456@localhost:5984/twitter/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/melb.json
+# create couchdb and push geojson and AURIN data to couchdb
+# curl -X PUT http://admin:123456@localhost:5984/twitter
+# curl -X POST "http://admin:123456@localhost:5984/twitter/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/melb.json
 curl -X PUT http://admin:123456@localhost:5984/geo_origin
 curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/origin_melb.json
 # curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/victoria.json

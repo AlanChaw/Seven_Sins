@@ -9,3 +9,5 @@
         file:///Users/wenbin/Library/Jupyter/runtime/nbserver-4224-open.html
     Or copy and paste one of these URLs:
         http://localhost:8888/?token=3b25cd6efbf1ea7be370d862bd2bcf5c1c90fc04132939ee
+[C 22:03:26.379 NotebookApp] received signal 15, stopping
+[I 22:03:26.415 NotebookApp] Shutting down 0 kernels

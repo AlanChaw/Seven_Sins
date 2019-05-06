@@ -16,6 +16,6 @@ for seed in seedWords:
             finalWords.add(lemma.name())
             # print(lemma.name())
 
-with open("food_words.txt", 'w') as f:
+with open("./food_words.txt", 'w') as f:
     for word in finalWords:
         f.write(word + "\n")

@@ -12,7 +12,7 @@ import couchdb
 # from collections import Counter
 
 server = couchdb.Server('http://admin:123456@localhost:5984/')
-db = server['total_tweets']
+db = server['total_jan_to_apr']
 
 text_count = 0
 all_record_list = []
@@ -24,7 +24,7 @@ for doc_id in db:
         "suburb": suburb,
         "text": text
     })
-    
+
 # suburb_text_dict = {}
 # for doc_id in db:
 #     suburb = db[doc_id]['suburb']
@@ -79,7 +79,7 @@ def pre_process(text) -> str:
     words = tokenizer.tokenize(text)
     # check if word is alphabetic
     words = [w for w in words if w.isalpha()]
-    # lemmatize 
+    # lemmatize
     words = [lemmatize(w) for w in words]
     # remove stop words
 #     stop_words = nltk.corpus.stopwords.words('english')
@@ -95,7 +95,7 @@ for record in all_record_list:
     record.update({
         "text": processed_text
     })
-    
+
 
 # for key in suburb_text_dict.keys():
 #     text_list = suburb_text_dict.get(key)
@@ -126,7 +126,7 @@ def containKeyword(text) -> bool:
 #             print(word)
             return True
     return False
-  
+
 for record in all_record_list:
     if containKeyword(record['text']):
         record.update({
@@ -166,7 +166,7 @@ for record in all_record_list:
         continue
     text = record['text']
     sentiment_results = analyzer.polarity_scores(text)
-    
+
     neg_value = sentiment_results['neg']
     pos_value = sentiment_results['pos']
     if pos_value > neg_value:
@@ -198,7 +198,7 @@ for record in all_record_list:
 #         })
 #     else:
 #         sentiment_dict = suburb_sentiment_dict.get(key)
-    
+
 #     for text in text_list:
 #         sentiment_results = analyzer.polarity_scores(text)
 #         neg_value = sentiment_results['neg']
@@ -213,7 +213,7 @@ for record in all_record_list:
 #     suburb_sentiment_dict.update({
 #         key: sentiment_dict
 #     })
-    
+
 
 
 # ## Check and Output analysed data to couchdb
@@ -230,9 +230,9 @@ import json
 # for ele in boundaryJS["features"]:
 #     name_list.append(ele['properties']["SA2_NAME16"])
 
-    
+
 # def sub_name_normalisation(input_name):
-    
+
 #     for standard_sub in name_list:
 #         if input_name.lower() == standard_sub.lower() or input_name.lower() in standard_sub.lower():
 #             return standard_sub
@@ -254,13 +254,10 @@ import json
 #             record.update({
 #                 "suburb": nomalized_suburb
 #             })
-        
+
 try:
     processed_db = server.create('analysed_twitters')
 except Exception as e:
     server.delete('analysed_twitters')
     processed_db = server.create('analysed_twitters')
 processed_db.update(all_record_list)
-
-
-

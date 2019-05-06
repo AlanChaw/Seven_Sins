@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "grunt": "^1.0.x",
-    "grunt-cli": "^1.3.x",
-    "grunt-couch": "^1.5.x"
+    "grunt-cli": "^1.3.2",
+    "grunt-couch": "^1.5.1"
   }
 }

@@ -17,7 +17,7 @@ curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_con
 # curl -X PUT http://admin:123456@localhost:5984/twitter
 # curl -X POST "http://admin:123456@localhost:5984/twitter/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/melb.json
 curl -X PUT http://admin:123456@localhost:5984/geo_origin
-curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/origin_melb.json
+curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/geo_melb/origin_melb.json
 # curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/victoria.json
 curl -X PUT http://admin:123456@localhost:5984/aurin
 curl -X POST "http://admin:123456@localhost:5984/aurin/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/aurin/Restaurant.json

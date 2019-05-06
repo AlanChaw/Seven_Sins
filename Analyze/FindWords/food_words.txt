@@ -150,16 +150,14 @@ salt_away
 viands
 storehouse
 entryway
-Nut
+nut
 flavor
 fowl
-en
 oil_colour
 storage
 sum
 veggie
 cookery
-come
 seasoning
 nitty-gritty
 junky
@@ -193,7 +191,6 @@ veg
 kernel
 freak
 pack
-do
 muddle
 purvey
 ready

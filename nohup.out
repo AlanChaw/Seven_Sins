@@ -483,3 +483,1178 @@
       "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
     }
 [E 14:55:27.203 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.78ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 14:57:27.188 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566634 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 14:57:27.188 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 14:57:27.188 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566634 (::1) 1.45ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 14:57:27.194 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 14:57:27.197 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 14:57:27.198 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 14:57:27.198 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 14:57:27.198 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "6903",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 14:57:27.198 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.09ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 14:59:27.694 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566635 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 14:59:27.695 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 14:59:27.695 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566635 (::1) 1.29ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 14:59:27.700 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 14:59:27.703 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 14:59:27.704 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 14:59:27.704 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 14:59:27.704 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "6903",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 14:59:27.704 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.51ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:01:27.192 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566636 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:01:27.192 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:01:27.192 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566636 (::1) 1.31ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:01:27.198 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:01:27.201 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:01:27.202 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:01:27.202 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:01:27.202 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7068",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:01:27.202 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.99ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:03:27.192 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566637 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:03:27.192 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:03:27.193 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566637 (::1) 1.52ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:03:27.198 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:03:27.200 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:03:27.200 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:03:27.201 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:03:27.201 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7167",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:03:27.201 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.48ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:05:27.194 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566638 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:05:27.194 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:05:27.195 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566638 (::1) 1.46ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:05:27.199 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:05:27.204 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:05:27.204 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:05:27.205 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:05:27.205 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7167",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:05:27.205 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.70ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:07:27.194 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566639 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:07:27.195 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:07:27.195 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566639 (::1) 1.46ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:07:27.200 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:07:27.204 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:07:27.205 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:07:27.205 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:07:27.205 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7167",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:07:27.205 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.47ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:09:27.190 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566640 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:09:27.190 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:09:27.191 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566640 (::1) 1.14ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:09:27.195 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:09:27.197 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:09:27.197 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:09:27.197 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:09:27.198 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7204",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:09:27.198 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 3.71ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:11:04.510 NotebookApp] Kernel started: 9d93ec58-08b5-46ac-b787-a1513426be71
+[W 15:11:04.804 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 3.11ms referer=http://localhost:8888/notebooks/ServerNote.ipynb
+[I 15:11:05.269 NotebookApp] Adapting to protocol v5.1 for kernel 9d93ec58-08b5-46ac-b787-a1513426be71
+[W 15:11:27.698 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566641 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:11:27.698 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:11:27.698 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566641 (::1) 1.32ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:11:27.704 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:11:27.706 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:11:27.706 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:11:27.707 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:11:27.707 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7231",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:11:27.707 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.01ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:13:04.711 NotebookApp] Saving file at /ServerNote.ipynb
+[W 15:13:27.197 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566642 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:13:27.197 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:13:27.197 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566642 (::1) 1.46ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:13:27.202 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:13:27.205 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:13:27.205 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:13:27.206 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:13:27.206 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7272",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:13:27.206 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.42ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:15:27.197 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566643 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:15:27.197 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:15:27.197 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566643 (::1) 1.50ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:15:27.202 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:15:27.206 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:15:27.207 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:15:27.207 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:15:27.208 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7272",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:15:27.208 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.24ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:17:27.199 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566644 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:17:27.199 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:17:27.199 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566644 (::1) 1.41ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:17:27.204 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:17:27.208 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:17:27.208 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:17:27.209 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:17:27.209 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7272",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:17:27.209 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.88ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:19:27.200 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566645 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:19:27.200 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:19:27.200 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566645 (::1) 1.42ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:19:27.205 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:19:27.209 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:19:27.210 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:19:27.210 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:19:27.210 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7272",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:19:27.210 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.29ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:21:27.198 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566646 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:21:27.199 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:21:27.199 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566646 (::1) 1.44ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:21:27.210 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:21:27.212 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:21:27.213 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:21:27.213 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:21:27.213 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7372",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:21:27.213 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.55ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:22:24.118 NotebookApp] Kernel interrupted: 716c9697-aa0f-4c75-be0f-8b4112664463
+[I 15:22:26.832 NotebookApp] Starting buffering for 716c9697-aa0f-4c75-be0f-8b4112664463:59f3f9960deb49e49af7f9c9289da77f
+[E 15:22:27.449 NotebookApp] Failed to run command:
+    ['/usr/local/opt/python3/bin/python3.6', '-m', 'ipykernel_launcher', '-f', '/Users/wenbin/Library/Jupyter/runtime/kernel-716c9697-aa0f-4c75-be0f-8b4112664463.json']
+        PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+        with kwargs:
+    {'stdin': -1, 'stdout': None, 'stderr': None, 'cwd': '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess', 'start_new_session': True}
+    
+[E 15:22:27.450 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 85, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/tornado/gen.py", line 1055, in run
+        value = future.result()
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/tornado/concurrent.py", line 238, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 4, in raise_exc_info
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/tornado/gen.py", line 307, in wrapper
+        yielded = next(result)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 287, in restart_kernel
+        yield gen.maybe_future(super(MappingKernelManager, self).restart_kernel(kernel_id))
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/jupyter_client/multikernelmanager.py", line 33, in wrapped
+        r = method(*args, **kwargs)
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/jupyter_client/manager.py", line 367, in restart_kernel
+        self.start_kernel(**self._launch_args)
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/jupyter_client/manager.py", line 258, in start_kernel
+        **kw)
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/jupyter_client/manager.py", line 203, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/jupyter_client/launcher.py", line 128, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/subprocess.py", line 709, in __init__
+        restore_signals, start_new_session)
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/subprocess.py", line 1344, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess': '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess'
+[E 15:22:27.470 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "0",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:22:27.471 NotebookApp] 500 POST /api/kernels/716c9697-aa0f-4c75-be0f-8b4112664463/restart (::1) 636.48ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:22:27.476 NotebookApp] Discarding 2 buffered messages for 716c9697-aa0f-4c75-be0f-8b4112664463:59f3f9960deb49e49af7f9c9289da77f
+[I 15:22:27.477 NotebookApp] Kernel shutdown: 716c9697-aa0f-4c75-be0f-8b4112664463
+[W 15:22:27.477 NotebookApp] Got events for closed stream None
+[W 15:22:27.477 NotebookApp] Got events for closed stream None
+[I 15:22:27.491 NotebookApp] Kernel started: f8974310-2ee6-454e-b832-679e2ff2a01d
+[I 15:22:28.079 NotebookApp] Adapting to protocol v5.1 for kernel f8974310-2ee6-454e-b832-679e2ff2a01d
+[I 15:22:44.937 NotebookApp] Starting buffering for f8974310-2ee6-454e-b832-679e2ff2a01d:59f3f9960deb49e49af7f9c9289da77f
+[I 15:22:45.253 NotebookApp] Kernel restarted: f8974310-2ee6-454e-b832-679e2ff2a01d
+[I 15:22:45.882 NotebookApp] Adapting to protocol v5.1 for kernel f8974310-2ee6-454e-b832-679e2ff2a01d
+[I 15:22:45.883 NotebookApp] Restoring connection for f8974310-2ee6-454e-b832-679e2ff2a01d:59f3f9960deb49e49af7f9c9289da77f
+[I 15:22:45.883 NotebookApp] Replaying 6 buffered messages
+[W 15:23:27.194 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566647 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:23:27.194 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:23:27.195 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566647 (::1) 1.52ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:23:27.200 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:23:27.203 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:23:27.203 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:23:27.204 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:23:27.204 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "6935",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:23:27.205 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.45ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:25:27.194 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566648 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:25:27.195 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:25:27.195 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566648 (::1) 1.17ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:25:27.199 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:25:27.202 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:25:27.202 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:25:27.203 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:25:27.203 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7060",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:25:27.203 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.57ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:27:27.561 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566649 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:27:27.561 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:27:27.561 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566649 (::1) 1.35ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:27:28.002 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:27:28.010 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:27:28.011 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:27:28.011 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:27:28.011 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "209577",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:27:28.011 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 12.08ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:28:35.345 NotebookApp] Starting buffering for 9d93ec58-08b5-46ac-b787-a1513426be71:ceb9321ac7b34f408f30b907be0c98a6
+[W 15:29:07.641 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566650 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:29:07.641 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:29:07.641 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566650 (::1) 1.29ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:29:07.648 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:29:07.651 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:29:07.651 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:29:07.651 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:29:07.652 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "9351",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:29:07.652 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.48ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:29:15.565 NotebookApp] Kernel started: 295f198c-2028-4599-b1cb-717f92be1542
+[W 15:29:15.875 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 3.35ms referer=http://localhost:8888/notebooks/Analyze/Preprocess.ipynb
+[I 15:29:16.249 NotebookApp] Adapting to protocol v5.1 for kernel 295f198c-2028-4599-b1cb-717f92be1542
+[I 15:29:16.732 NotebookApp] Starting buffering for 295f198c-2028-4599-b1cb-717f92be1542:e8e97143be9e401c84ed57614ee62629
+[W 15:29:27.438 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566651 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:29:27.438 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:29:27.438 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566651 (::1) 1.32ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:29:27.461 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:29:27.465 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:29:27.465 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:29:27.466 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:29:27.466 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "9351",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:29:27.466 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.50ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:31:00.694 NotebookApp] Kernel shutdown: 5bff8891-e5e9-4d09-9b64-df554deb25dd
+[I 15:31:01.831 NotebookApp] Kernel shutdown: 9d93ec58-08b5-46ac-b787-a1513426be71
+[I 15:31:10.825 NotebookApp] Kernel shutdown: f8974310-2ee6-454e-b832-679e2ff2a01d
+[W 15:31:27.200 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566652 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:31:27.200 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:31:27.201 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566652 (::1) 1.42ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:31:27.206 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:31:27.208 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:31:27.209 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:31:27.209 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:31:27.210 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "9711",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:31:27.210 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.94ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:33:27.200 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566653 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:33:27.200 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:33:27.201 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566653 (::1) 1.43ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:33:27.205 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:33:27.208 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:33:27.209 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:33:27.209 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:33:27.210 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "7943",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:33:27.210 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.93ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:35:27.199 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566654 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:35:27.199 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:35:27.200 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566654 (::1) 1.42ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:35:27.204 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:35:27.207 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:35:27.207 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:35:27.207 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:35:27.208 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8040",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:35:27.208 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.25ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:37:27.203 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566655 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:37:27.203 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:37:27.204 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566655 (::1) 1.49ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:37:27.208 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:37:27.212 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:37:27.213 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:37:27.213 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:37:27.214 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8040",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:37:27.214 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 6.19ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:38:42.847 NotebookApp] 404 POST /api/kernels/f8974310-2ee6-454e-b832-679e2ff2a01d/interrupt (::1): Kernel does not exist: f8974310-2ee6-454e-b832-679e2ff2a01d
+[W 15:38:42.847 NotebookApp] Kernel does not exist: f8974310-2ee6-454e-b832-679e2ff2a01d
+[W 15:38:42.847 NotebookApp] 404 POST /api/kernels/f8974310-2ee6-454e-b832-679e2ff2a01d/interrupt (::1) 1.77ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:39:03.496 NotebookApp] 404 POST /api/kernels/f8974310-2ee6-454e-b832-679e2ff2a01d/interrupt (::1): Kernel does not exist: f8974310-2ee6-454e-b832-679e2ff2a01d
+[W 15:39:03.496 NotebookApp] Kernel does not exist: f8974310-2ee6-454e-b832-679e2ff2a01d
+[W 15:39:03.496 NotebookApp] 404 POST /api/kernels/f8974310-2ee6-454e-b832-679e2ff2a01d/interrupt (::1) 1.35ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:39:27.204 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566656 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:39:27.204 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:39:27.205 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566656 (::1) 1.46ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:39:27.209 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:39:27.212 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:39:27.213 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:39:27.213 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:39:27.213 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8046",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:39:27.213 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 4.80ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[E 15:39:35.446 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/kernels/handlers.py", line 85, in post
+        yield gen.maybe_future(km.restart_kernel(kernel_id))
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/tornado/gen.py", line 1055, in run
+        value = future.result()
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/tornado/concurrent.py", line 238, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 4, in raise_exc_info
+      File "/Users/wenbin/Library/Python/3.6/lib/python/site-packages/tornado/gen.py", line 307, in wrapper
+        yielded = next(result)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 286, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/kernels/kernelmanager.py", line 366, in _check_kernel_id
+        raise web.HTTPError(404, u'Kernel does not exist: %s' % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: f8974310-2ee6-454e-b832-679e2ff2a01d)
+[E 15:39:35.447 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "0",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:39:35.447 NotebookApp] 500 POST /api/kernels/f8974310-2ee6-454e-b832-679e2ff2a01d/restart (::1) 1.34ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[W 15:39:35.457 NotebookApp] 404 DELETE /api/sessions/982c07c7-1ae9-4d93-9521-b3de452c89e0 (::1): Session not found: session_id='982c07c7-1ae9-4d93-9521-b3de452c89e0'
+[W 15:39:35.457 NotebookApp] Session not found: session_id='982c07c7-1ae9-4d93-9521-b3de452c89e0'
+[W 15:39:35.458 NotebookApp] 404 DELETE /api/sessions/982c07c7-1ae9-4d93-9521-b3de452c89e0 (::1) 1.33ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:39:35.476 NotebookApp] Kernel started: b4083e6d-43c1-43a6-bcd5-e5b889f81856
+[I 15:39:36.076 NotebookApp] Adapting to protocol v5.1 for kernel b4083e6d-43c1-43a6-bcd5-e5b889f81856
+[W 15:40:04.813 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566657 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:40:04.814 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:40:04.814 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566657 (::1) 1.33ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:40:04.820 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:40:04.823 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:40:04.824 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:40:04.824 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:40:04.824 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8046",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:40:04.824 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.52ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:40:08.281 NotebookApp] Kernel shutdown: 295f198c-2028-4599-b1cb-717f92be1542
+[I 15:40:09.113 NotebookApp] Kernel shutdown: b4083e6d-43c1-43a6-bcd5-e5b889f81856
+[W 15:40:14.403 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566658 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:40:14.404 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:40:14.404 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566658 (::1) 1.59ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:40:14.411 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:40:14.415 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:40:14.416 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:40:14.416 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:40:14.416 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8046",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:40:14.416 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.79ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:40:18.669 NotebookApp] Kernel started: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[W 15:40:18.962 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 2.60ms referer=http://localhost:8888/notebooks/Analyze/Preprocess.ipynb
+[I 15:40:19.315 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[W 15:41:27.710 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566659 (::1): No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:41:27.710 NotebookApp] No such file or directory: Preprocess/Preprocess.ipynb
+[W 15:41:27.710 NotebookApp] 404 GET /api/contents/Preprocess/Preprocess.ipynb?content=0&_=1557117566659 (::1) 1.34ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:41:27.716 NotebookApp] Uploading file to /Preprocess/Preprocess.ipynb
+[E 15:41:27.720 NotebookApp] Error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/filemanager.py", line 471, in save
+        self._save_notebook(os_path, nb)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 293, in _save_notebook
+        with self.atomic_writing(os_path, encoding='utf-8') as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 213, in atomic_writing
+        with atomic_writing(os_path, *args, log=self.log, **kwargs) as f:
+      File "/usr/local/Cellar/python3/3.6.4_2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/contextlib.py", line 81, in __enter__
+        return next(self.gen)
+      File "/usr/local/lib/python3.6/site-packages/notebook/services/contents/fileio.py", line 108, in atomic_writing
+        fileobj = io.open(path, 'w', encoding=encoding, **kwargs)
+    FileNotFoundError: [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:41:27.720 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1): Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[W 15:41:27.720 NotebookApp] Unexpected error while saving file: Preprocess/Preprocess.ipynb [Errno 2] No such file or directory: '/Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024/Preprocess/Preprocess.ipynb'
+[E 15:41:27.721 NotebookApp] {
+      "Host": "localhost:8888",
+      "Connection": "keep-alive",
+      "Content-Length": "8046",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Origin": "http://localhost:8888",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36",
+      "Content-Type": "application/json",
+      "Referer": "http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
+      "Cookie": "_xsrf=2|33479048|377b108e8d93b9325473558c3e5711cb|1555048610; username-localhost-8891=\"2|1:0|10:1556696819|23:username-localhost-8891|44:ZjgwNjM3NGY2ZTNjNGQ5ZWIyMzI4MWUzNTg4OWFkMmM=|6b719ed85bfe7e66df2f7d71d60f192eb15660a63473a6b95b9c22a80f44b16c\"; username-localhost-8892=\"2|1:0|10:1556807300|23:username-localhost-8892|44:NjI3ZGNkYjJhYWNkNGFkN2FmMGY4MjA1NGU4N2E4ZTA=|3c4749bfcabb9293863a60aad1279b3795202931aafa9c71100006168cb1aae9\"; username-localhost-8889=\"2|1:0|10:1556957009|23:username-localhost-8889|44:MjkxNmM4ZDNiNTE1NGNjMTlkZjYwZTkxNjFhYWMwMGM=|ae58776c504848ce9aa2b5905f4050d7aa19203a6285f93eec3a137c0a2fc359\"; username-localhost-8890=\"2|1:0|10:1557038023|23:username-localhost-8890|44:ODNlYzYxOGJhY2FmNDY5M2I0OTk1YTM4NmE0NDA2YmY=|7fce4556075d20f4a1622794f6a6624bb5b626a276f328d63b697c1cbb8add99\"; username-localhost-8888=\"2|1:0|10:1557116331|23:username-localhost-8888|44:ZWU1MDZiNGIxNTc2NGFkODkxMjNjMTczN2FkMGNlOGY=|8e7bea040f70841d3db6dec30ff25d3c5bd77d4967a9dd7b18f17f1fc79adf23\""
+    }
+[E 15:41:27.721 NotebookApp] 500 PUT /api/contents/Preprocess/Preprocess.ipynb (::1) 5.92ms referer=http://localhost:8888/notebooks/Preprocess/Preprocess.ipynb
+[I 15:41:40.689 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:42:18.665 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:46:19.102 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:48:18.666 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:50:18.678 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:52:18.669 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:54:18.673 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:56:18.669 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 15:58:18.682 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:06:40.628 NotebookApp] Kernel interrupted: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 16:08:18.672 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:10:18.676 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:12:18.926 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:14:18.680 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:16:19.127 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:18:18.677 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:18:27.543 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:06d2c9839ea74fe19a354a7c2c8ada97
+[I 16:18:28.273 NotebookApp] Kernel restarted: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 16:18:28.898 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 16:18:28.899 NotebookApp] Restoring connection for d284c66f-a5bb-4d42-b4c0-8422539d3297:06d2c9839ea74fe19a354a7c2c8ada97
+[I 16:18:28.900 NotebookApp] Replaying 5 buffered messages
+[I 16:20:18.671 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:22:18.672 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:24:18.679 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:26:18.680 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:32:18.733 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:33:16.901 NotebookApp] Saving file at /Analyze/FindWords/food_words.txt
+[I 16:33:53.648 NotebookApp] Saving file at /Analyze/FindWords/food_words.txt
+[I 16:34:18.686 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:36:18.684 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:38:18.873 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:40:18.956 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:41:34.060 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:06d2c9839ea74fe19a354a7c2c8ada97
+[I 16:41:34.791 NotebookApp] Kernel restarted: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 16:41:35.366 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 16:41:35.367 NotebookApp] Restoring connection for d284c66f-a5bb-4d42-b4c0-8422539d3297:06d2c9839ea74fe19a354a7c2c8ada97
+[I 16:41:35.367 NotebookApp] Replaying 3 buffered messages
+[I 16:42:18.755 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:46:18.683 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 16:48:18.699 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 17:41:39.427 NotebookApp] Kernel started: 5dd58f15-5695-4292-8a35-ffbf7a6f694b
+[W 17:41:39.798 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 2.83ms referer=http://localhost:8888/notebooks/CouchdbNote.ipynb
+[I 17:41:40.120 NotebookApp] Adapting to protocol v5.1 for kernel 5dd58f15-5695-4292-8a35-ffbf7a6f694b
+[I 17:41:40.563 NotebookApp] Starting buffering for 5dd58f15-5695-4292-8a35-ffbf7a6f694b:5d61a8f4937844ee9789088cecde4a32
+[I 17:41:42.938 NotebookApp] Kernel started: bc2e3f5a-3d44-4a56-8fc6-484c8e7e4a37
+[W 17:41:43.225 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 2.51ms referer=http://localhost:8888/notebooks/One%20Click.ipynb
+[I 17:41:43.609 NotebookApp] Adapting to protocol v5.1 for kernel bc2e3f5a-3d44-4a56-8fc6-484c8e7e4a37
+[I 17:41:52.814 NotebookApp] Saving file at /One Click.ipynb
+[I 17:41:52.845 NotebookApp] Starting buffering for bc2e3f5a-3d44-4a56-8fc6-484c8e7e4a37:9dd3f9e4c9c84fdb8e4c51db6eae4239
+[I 17:54:36.043 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:06d2c9839ea74fe19a354a7c2c8ada97
+[I 17:56:16.887 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[W 17:56:16.971 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 2.38ms referer=http://localhost:8888/notebooks/Analyze/Preprocess.ipynb
+[I 17:58:13.434 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:04:14.099 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:06:13.421 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:07:10.110 NotebookApp] Copying Background/MyCouchdb/geo_melb/melb.json to /Background/MyCouchdb/geo_melb
+[I 18:08:13.420 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[W 18:08:37.425 NotebookApp] delete /Analyze/melb.json
+[I 18:10:13.411 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:12:13.414 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:14:13.412 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:16:13.413 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:18:13.415 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:20:13.419 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:21:41.662 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:3591d6340cbb4b3aa7ac3aab8a0e5af3
+[I 18:21:42.388 NotebookApp] Kernel restarted: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 18:21:43.059 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 18:21:43.060 NotebookApp] Restoring connection for d284c66f-a5bb-4d42-b4c0-8422539d3297:3591d6340cbb4b3aa7ac3aab8a0e5af3
+[I 18:21:43.060 NotebookApp] Replaying 3 buffered messages
+[I 18:22:13.402 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:22:25.747 NotebookApp] Kernel interrupted: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 18:24:13.407 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:26:13.408 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:28:13.407 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:30:13.406 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:31:52.681 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:32:13.410 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:34:13.416 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:36:13.414 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:37:02.171 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:3591d6340cbb4b3aa7ac3aab8a0e5af3
+[I 18:37:05.479 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[W 18:37:05.691 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190506141848 (::1) 2.70ms referer=http://localhost:8888/notebooks/Analyze/Preprocess.ipynb
+[I 18:39:05.322 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:49:05.317 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:49:16.239 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:36090bd4ff6f41298bd37d26e108a1c7
+[I 18:49:16.859 NotebookApp] Kernel restarted: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 18:49:17.617 NotebookApp] Adapting to protocol v5.1 for kernel d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 18:49:17.618 NotebookApp] Restoring connection for d284c66f-a5bb-4d42-b4c0-8422539d3297:36090bd4ff6f41298bd37d26e108a1c7
+[I 18:49:17.618 NotebookApp] Replaying 3 buffered messages
+[I 18:51:05.745 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:55:05.322 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 18:56:32.691 NotebookApp] Saving file at /Analyze/Preprocess.ipynb

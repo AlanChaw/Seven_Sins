@@ -1,0 +1,60 @@
+- name: uninstall old versions of docker
+  tags: 'docker'
+  become: yes
+  apt:
+    name: ['docker', 'docker-engine', 'docker.io']
+    state: absent
+
+- name: install dependencies
+  tags: 'docker'
+  become: yes
+  apt:
+    name: ['apt-transport-https', 'ca-certificates', 'curl', 'python-setuptools', 'python-pip', 'software-properties-common']
+    state: latest
+    install_recommends: no
+    update_cache: yes
+
+- name: add docker apt repository key
+  tags: 'docker'
+  become: yes
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: add docker apt repository and update apt cache
+  tags: 'docker'
+  become: yes
+  apt_repository:
+    repo: "deb https://download.docker.com/linux/{{ ansible_distribution|lower }} {{ ansible_distribution_release }} stable"
+    mode: '644'
+    update_cache: yes
+    state: present
+
+- name: install docker
+  tags: 'docker'
+  become: yes
+  apt:
+    name: ['docker-ce']
+    state: latest
+    install_recommends: no
+    update_cache: yes
+
+- name: install docker-compose
+  tags: 'docker'
+  become: yes
+  pip:
+    name: ['docker-compose']
+    version: 1.22.0
+    state: present
+
+- name: copy a script to the remote host
+  become: yes
+  copy: src=./add-group.sh dest=/home/ubuntu/ mode=0777
+
+- name: add docker into user group
+  become: yes
+  shell: sh /home/ubuntu/add-group.sh
+
+# - name: add docker into user group
+#   become: yes
+#   command: usermod -aG docker $USER; newgrp docker

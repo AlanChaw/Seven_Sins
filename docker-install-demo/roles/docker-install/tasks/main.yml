@@ -46,3 +46,8 @@
     name: ['docker-compose']
     version: 1.22.0
     state: present
+
+- name: add docker into user group
+  tags: 'docker'
+  become: yes
+  command: sudo groupadd docker; sudo usermod -aG docker $USER; newgrp docker

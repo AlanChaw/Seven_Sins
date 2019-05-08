@@ -7,6 +7,11 @@
 
 # In[1]:
 
+# sudo apt-get install python3-pip
+# pip install nltk
+# pip install --user couchdb
+
+
 
 import couchdb
 # from collections import Counter

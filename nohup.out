@@ -1658,3 +1658,9 @@
 [I 18:51:05.745 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
 [I 18:55:05.322 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
 [I 18:56:32.691 NotebookApp] Saving file at /Analyze/Preprocess.ipynb
+[I 21:15:40.648 NotebookApp] Starting buffering for d284c66f-a5bb-4d42-b4c0-8422539d3297:36090bd4ff6f41298bd37d26e108a1c7
+[C 22:19:23.090 NotebookApp] received signal 15, stopping
+[I 22:19:23.098 NotebookApp] Shutting down 3 kernels
+[I 22:19:24.130 NotebookApp] Kernel shutdown: d284c66f-a5bb-4d42-b4c0-8422539d3297
+[I 22:19:24.134 NotebookApp] Kernel shutdown: 5dd58f15-5695-4292-8a35-ffbf7a6f694b
+[I 22:19:24.136 NotebookApp] Kernel shutdown: bc2e3f5a-3d44-4a56-8fc6-484c8e7e4a37

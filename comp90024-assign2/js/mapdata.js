@@ -80,6 +80,8 @@ for (j = 0; j < json_data["features"].length; j++) {
 }}
 //CREAT MPA DATA Visualization
 
+
+
 $.when(locate_data,json_mel).done(function() {
     var map = L.map('map')
         .setView([-37.8142, 144.9632], 12);
@@ -258,5 +260,15 @@ $.when(locate_data,json_mel).done(function() {
       return div.node();
 
     }
+    function loadingEffect() {
+        var loading = $('#fountainG');
+        loading.hide();
+        $(document).ajaxStart(function () {
+            loading.show();
+        }).ajaxStop(function () {
+            loading.hide();
+        });
+    }
+    loadingEffect();
 
 });

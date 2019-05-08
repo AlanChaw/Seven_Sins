@@ -47,7 +47,16 @@ for (j = 0; j < json_data["features"].length; j++) {
 console.log(name_value)
 // control that shows state info on hover
 // get color depending on population density value
+var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 $.when(locate_data,json_mel).done(function() {
     var map = L.map('map')
         .setView([-37.8142, 144.9632], 12);

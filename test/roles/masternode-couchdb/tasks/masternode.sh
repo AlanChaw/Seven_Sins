@@ -26,6 +26,7 @@ for (( i=0; i<${size}; i++ )); do
     echo "${i}"
     echo "${nodes[${i}]}"
     curl -X PUT "http://${nodes[${i}]}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
+    sleep 2
     curl -X PUT "http://${user}:${password}@${nodes[${i}]}:5984/_node/couchdb@${nodes[${i}]}/_config/chttpd/bind_address" --data '"0.0.0.0"'
 done
 

@@ -1664,3 +1664,40 @@
 [I 22:19:24.130 NotebookApp] Kernel shutdown: d284c66f-a5bb-4d42-b4c0-8422539d3297
 [I 22:19:24.134 NotebookApp] Kernel shutdown: 5dd58f15-5695-4292-8a35-ffbf7a6f694b
 [I 22:19:24.136 NotebookApp] Kernel shutdown: bc2e3f5a-3d44-4a56-8fc6-484c8e7e4a37
+[I 16:28:59.092 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 16:28:59.092 NotebookApp] Serving notebooks from local directory: /Users/wenbin/Desktop/Unimelb courses/COMP90024 CCC/Assignment2/90024
+[I 16:28:59.092 NotebookApp] The Jupyter Notebook is running at:
+[I 16:28:59.092 NotebookApp] http://localhost:8888/?token=7cb1c8ecc3a531a0c9295ac46e4ea3a03dcde160ce986f68
+[I 16:28:59.092 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:28:59.097 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/wenbin/Library/Jupyter/runtime/nbserver-5208-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=7cb1c8ecc3a531a0c9295ac46e4ea3a03dcde160ce986f68
+[I 16:29:06.274 NotebookApp] Creating new file in 
+[I 16:29:15.585 NotebookApp] Creating new notebook in 
+[I 16:29:16.611 NotebookApp] Kernel started: 770a661c-8450-45f8-9225-10f3b1f725b5
+[W 16:29:16.741 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190508162858 (::1) 10.74ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python3
+[I 16:29:17.319 NotebookApp] Adapting to protocol v5.1 for kernel 770a661c-8450-45f8-9225-10f3b1f725b5
+[I 16:31:16.546 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:33:16.545 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:35:16.543 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:37:16.543 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:39:16.544 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:39:52.795 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:40:06.132 NotebookApp] Saving file at /Web deploy note.ipynb
+[I 16:40:10.043 NotebookApp] Saving file at /Web deploy note.ipynb
+[I 16:41:03.134 NotebookApp] Saving file at /Web deploy note.ipynb
+[I 16:41:03.886 NotebookApp] Saving file at /Web deploy note.ipynb
+[I 16:41:04.217 NotebookApp] Starting buffering for 770a661c-8450-45f8-9225-10f3b1f725b5:631677235ce042508ade88ef3475b4bf
+[I 16:41:06.377 NotebookApp] Kernel shutdown: 770a661c-8450-45f8-9225-10f3b1f725b5
+[I 16:41:37.795 NotebookApp] 302 GET / (::1) 0.75ms
+[I 16:41:40.739 NotebookApp] Kernel started: 5f6826e5-374d-4543-9565-0e139da4140f
+[W 16:41:40.996 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20190508162858 (::1) 2.92ms referer=http://localhost:8888/notebooks/Web%20deploy%20note.ipynb
+[I 16:41:41.515 NotebookApp] Adapting to protocol v5.1 for kernel 5f6826e5-374d-4543-9565-0e139da4140f
+[I 16:41:58.111 NotebookApp] Saving file at /Web deploy note.ipynb
+[I 16:41:58.374 NotebookApp] Starting buffering for 5f6826e5-374d-4543-9565-0e139da4140f:8d7f716236704b4f91edb7e33b886417
+[C 16:42:17.309 NotebookApp] received signal 15, stopping
+[I 16:42:17.310 NotebookApp] Shutting down 1 kernel
+[I 16:42:17.519 NotebookApp] Kernel shutdown: 5f6826e5-374d-4543-9565-0e139da4140f

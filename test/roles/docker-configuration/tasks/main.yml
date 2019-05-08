@@ -53,8 +53,5 @@
 
 - name: add docker into user group
   become: yes
-  shell: sh /home/ubuntu/add-group.sh
+  shell: /home/ubuntu/add-group.sh
 
-# - name: add docker into user group
-#   become: yes
-#   command: usermod -aG docker $USER; newgrp docker

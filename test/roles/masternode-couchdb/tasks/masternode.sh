@@ -11,7 +11,7 @@ echo "== Start the container =="
 docker run -d -p 5984:5984 -p 5986:5986 -p 4369:4369 -p 9100:9100 --name=mastercouchdb couchdb:2.3.0
 sleep 3
 
-# declare -a cont=`docker ps | grep couchdb | cut -f1 -d' '`
+
 declare -a cont=`docker ps -aqf "name=mastercouchdb"`
 
 docker exec ${cont} bash -c "echo \"-setcookie couchdb_cluster\" >> /opt/couchdb/etc/vm.args"

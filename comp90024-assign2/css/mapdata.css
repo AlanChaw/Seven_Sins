@@ -1,6 +1,6 @@
 
         body {
-
+          background-color: rgb(0,0,0)
         }
         #map {
             position: absolute;
@@ -17,7 +17,7 @@ height:10px;
 top:20px;
 left:150px;
 position:absolute;
-z-index:9999;
+z-index:999;
 background-color:#666;
 }
 .dropbtn {
@@ -25,7 +25,7 @@ background-color:#666;
   left:60px;
   width:80px;
   height:30px;
-  background-color: #7fcdbb;
+  background-color: #696969;
   color: white;
   padding: 10px;
   font-size: 10px;
@@ -226,10 +226,11 @@ background-color:#0099cc;
 
 }
 .cssload-thecube {
+
 	width: 73px;
 	height: 73px;
 	margin: 0 auto;
-	margin-top: 49px;
+	margin-top: 250px;
 	position: relative;
 	transform: rotateZ(45deg);
 		-o-transform: rotateZ(45deg);

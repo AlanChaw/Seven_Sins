@@ -4,4 +4,4 @@
 
 - name: execute the subnode script
   become: yes
-  shell: bash /home/ubuntu/subnode.sh
+  shell: /home/ubuntu/subnode.sh

@@ -4,4 +4,4 @@
 
 - name: execute the masternode script
   become: yes
-  shell: bash /home/ubuntu/masternode.sh
+  shell: /home/ubuntu/masternode.sh

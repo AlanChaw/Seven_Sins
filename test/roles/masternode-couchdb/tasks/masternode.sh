@@ -22,17 +22,9 @@ sleep 3
 
 echo "== Enable cluster setup =="
 
-# curl -X PUT "http://${masternode}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
-# curl -X PUT "http://${user}:${password}@${masternode}:5984/_node/couchdb@${masternode}/_config/chttpd/bind_address" --data '"0.0.0.0"'
-
-# for (( i=0; i<${size}; i++ )); do
-#     if [ "${nodes[${i}]}" != "${masternode}" ]; then
-#         curl -X PUT "http://${nodes[${i}]}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
-#         curl -X PUT "http://${user}:${password}@${nodes[${i}]}:5984/_node/couchdb@${nodes[${i}]}/_config/chttpd/bind_address" --data '"0.0.0.0"'
-#     fi
-# done
-
 for (( i=0; i<${size}; i++ )); do
+    echo "${i}"
+    echo "${nodes[${i}]}"
     curl -X PUT "http://${nodes[${i}]}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
     curl -X PUT "http://${user}:${password}@${nodes[${i}]}:5984/_node/couchdb@${nodes[${i}]}/_config/chttpd/bind_address" --data '"0.0.0.0"'
 done
@@ -52,5 +44,3 @@ done
 echo "== Finish cluster =="
 curl -X POST -H "Content-Type: application/json" "http://${user}:${password}@${masternode}:5984/_cluster_setup" -d '{"action": "finish_cluster"}'
 
-# rev=`curl -X GET "http://${masternode}:5986/_nodes/nonode@nohost" --user "${user}:${password}" | sed -e 's/[{}"]//g' | cut -f3 -d:`
-# curl -X DELETE "http://${masternode}:5986/_nodes/nonode@nohost?rev=${rev}"  --user "${user}:${password}"

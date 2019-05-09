@@ -79,7 +79,7 @@ class MyStreamListener(tweepy.StreamListener):
             bool = do1tweet(jsontweet)
             if bool == True: self.i += 1
         except:pass
-        if self.i>1000:return False
+        if self.i>=5000:return False
 
 auth= tweepy.OAuthHandler('rcFJ0DzhHSDvTfgHK49WMCc9S', 'LZdhAUDVvnWcHHxUXTzYQF2f57KrNfmtEZHCmKzNZjxxsuG0Bp')
 auth.set_access_token('1121779286069760000-UHzlxp96uTyQXjtHJFm5rLqzI0TRuH', 'yHrsQCrFWzlHhSyoPetkRW0ACNu4mzpSq1YRPkdZzgaFL')

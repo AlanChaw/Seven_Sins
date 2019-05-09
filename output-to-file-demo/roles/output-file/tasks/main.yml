@@ -1,0 +1,4 @@
+- name: output content to a file
+  vars:
+    content: "{{ ansible_architecture }}"
+  template: src=hello.j2 dest=./hello.txt

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "== Set variables =="
-declare -a nodes=(103.6.254.104 103.6.254.117)
-export masternode=103.6.254.104
+declare -a nodes=(45.113.232.212 45.113.233.252)
+export masternode=45.113.232.212
 export size=${#nodes[@]}
 export user=admin
 export password=123456
@@ -26,8 +26,9 @@ for (( i=0; i<${size}; i++ )); do
     echo "${i}"
     echo "${nodes[${i}]}"
     curl -X PUT "http://${nodes[${i}]}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
-    sleep 2
+    sleep 3
     curl -X PUT "http://${user}:${password}@${nodes[${i}]}:5984/_node/couchdb@${nodes[${i}]}/_config/chttpd/bind_address" --data '"0.0.0.0"'
+    sleep 2
 done
 
 echo "== Add nodes to cluster =="

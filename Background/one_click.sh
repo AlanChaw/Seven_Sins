@@ -34,14 +34,14 @@ echo "  "
 
 echo "=============replicate database from analyse server==================="
 
-# curl -X PUT http://admin:123456@localhost:5984/food_twitters
-# curl -X PUT http://admin:123456@localhost:5984/shopping_twitters
-# curl -X PUT http://admin:123456@localhost:5984/job_twitters
-# {
-#   curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://admin:123456@115.146.92.183:5984/food_twitters","target":"http://admin:123456@localhost:5984/food_twitters"}' http://localhost:5984/_replicate
-#   curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://admin:123456@115.146.92.183:5984/shopping_twitters","target":"http://admin:123456@localhost:5984/shopping_twitters"}' http://localhost:5984/_replicate
-#   curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://admin:123456@115.146.92.183:5984/job_twitters","target":"http://admin:123456@localhost:5984/job_twitters"}' http://localhost:5984/_replicate
-# } &> /dev/null
+curl -X PUT http://admin:123456@localhost:5984/food_twitters
+curl -X PUT http://admin:123456@localhost:5984/shopping_twitters
+curl -X PUT http://admin:123456@localhost:5984/job_twitters
+{
+  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://admin:123456@115.146.92.183:5984/food_twitters","target":"http://admin:123456@localhost:5984/food_twitters"}' http://localhost:5984/_replicate
+  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://admin:123456@115.146.92.183:5984/shopping_twitters","target":"http://admin:123456@localhost:5984/shopping_twitters"}' http://localhost:5984/_replicate
+  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://admin:123456@115.146.92.183:5984/job_twitters","target":"http://admin:123456@localhost:5984/job_twitters"}' http://localhost:5984/_replicate
+} &> /dev/null
 
 echo "=============replication OK==================="
 echo "  "

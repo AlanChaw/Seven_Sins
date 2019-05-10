@@ -64,7 +64,7 @@ $.when(locate_data,json_mel).done(function() {
         };
 
         info.update = function (properties) {
-          this._div.innerHTML = '<h4>victoria state</h4>' +  (properties ?
+          this._div.innerHTML = '<h4>Shopping Data</h4>' +  (properties ?
             '<b>' + properties.SA2_NAME16 + '</b><br />' + "Total: " + dict_total[properties.SA2_NAME16] + ' posts' +
             '</b><br />' + "Positive: " + dict_posi[properties.SA2_NAME16] + ' posts' + '</b><br />' + "Neutral: " + dict_neu[properties.SA2_NAME16] + ' posts'
             + '</b><br />' + "Negative: " + dict_neg[properties.SA2_NAME16] + ' posts'

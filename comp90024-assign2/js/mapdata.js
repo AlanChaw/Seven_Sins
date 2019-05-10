@@ -8,18 +8,7 @@ var locate_data = $.ajax({
         alert(xhr.statusText)
     }
 })
-var json_data = (function() {
-    var json = null;
-    $.ajax({
-        async: false,
-        url: "http://115.146.92.183:5984/geo_origin/geo_melb",
-        dataType: "json",
-        success: function (data) {
-            json = data;
-        }
-    });
-    return json;
-})();
+
 var json_mel = (function() {
     var json = null;
     $.ajax({
@@ -38,46 +27,22 @@ for (j = 0; j < json_mel["rows"].length; j++) {
   dict_total[json_mel["rows"][j]["key"]["name"]] = json_mel["rows"][j]["value"]["total"]
 
 }
-var total_value = {};
-for (j = 0; j < json_data["features"].length; j++) {
-  if(dict_total[json_data["features"][j]["properties"]["SA2_NAME16"]] == null){
-  total_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = 0
-}else{
-  total_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = dict_total[json_data["features"][j]["properties"]["SA2_NAME16"]]
-}}
+
 var dict_posi = {};
 for (j = 0; j < json_mel["rows"].length; j++) {
   dict_posi[json_mel["rows"][j]["key"]["name"]] = json_mel["rows"][j]["value"]["positive"]
 }
-var positive_value = {};
-for (j = 0; j < json_data["features"].length; j++) {
-  if(dict_posi[json_data["features"][j]["properties"]["SA2_NAME16"]] == null){
-  positive_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = 0
-}else{
-  positive_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = dict_posi[json_data["features"][j]["properties"]["SA2_NAME16"]]
-}}
+
 var dict_neg = {};
 for (j = 0; j < json_mel["rows"].length; j++) {
   dict_neg[json_mel["rows"][j]["key"]["name"]] = json_mel["rows"][j]["value"]["negative"]
 }
-var negative_value = {};
-for (j = 0; j < json_data["features"].length; j++) {
-  if(dict_neg[json_data["features"][j]["properties"]["SA2_NAME16"]] == null){
-  negative_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = 0
-}else{
-  negative_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = dict_neg[json_data["features"][j]["properties"]["SA2_NAME16"]]
-}}
+
 var dict_neu = {};
 for (j = 0; j < json_mel["rows"].length; j++) {
   dict_neu[json_mel["rows"][j]["key"]["name"]] = json_mel["rows"][j]["value"]["neutral"]
 }
-var neutral_value = {};
-for (j = 0; j < json_data["features"].length; j++) {
-  if(dict_neu[json_data["features"][j]["properties"]["SA2_NAME16"]] == null){
-  neutral_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = 0
-}else{
-  neutral_value[json_data["features"][j]["properties"]["SA2_NAME16"]] = dict_neu[json_data["features"][j]["properties"]["SA2_NAME16"]]
-}}
+
 //CREAT MPA DATA Visualization
 
 
@@ -100,9 +65,9 @@ $.when(locate_data,json_mel).done(function() {
 
         info.update = function (properties) {
           this._div.innerHTML = '<h4>victoria state</h4>' +  (properties ?
-            '<b>' + properties.SA2_NAME16 + '</b><br />' + "Total: " + total_value[properties.SA2_NAME16] + ' posts' +
-            '</b><br />' + "Positive: " + positive_value[properties.SA2_NAME16] + ' posts' + '</b><br />' + "Neutral: " + neutral_value[properties.SA2_NAME16] + ' posts'
-            + '</b><br />' + "Negative: " + negative_value[properties.SA2_NAME16] + ' posts'
+            '<b>' + properties.SA2_NAME16 + '</b><br />' + "Total: " + dict_total[properties.SA2_NAME16] + ' posts' +
+            '</b><br />' + "Positive: " + dict_posi[properties.SA2_NAME16] + ' posts' + '</b><br />' + "Neutral: " + dict_neu[properties.SA2_NAME16] + ' posts'
+            + '</b><br />' + "Negative: " + dict_neg[properties.SA2_NAME16] + ' posts'
             : 'Hover over a distrcit');
 
         };
@@ -117,7 +82,7 @@ $.when(locate_data,json_mel).done(function() {
             color: 'white',
             dashArray: '3',
             fillOpacity: 0.7,
-            fillColor: getColor(total_value[feature.properties.SA2_NAME16])
+            fillColor: getColor(dict_total[feature.properties.SA2_NAME16])
           };
         }
         function getColor(d) {
@@ -198,7 +163,7 @@ $.when(locate_data,json_mel).done(function() {
     legend.addTo(map);
     function chart(d) {
       var feature = d.feature;
-      var array1 = new Array(positive_value[feature.properties.SA2_NAME16], neutral_value[feature.properties.SA2_NAME16], negative_value[feature.properties.SA2_NAME16]);
+      var array1 = new Array(dict_posi[feature.properties.SA2_NAME16], dict_neu[feature.properties.SA2_NAME16], dict_neg[feature.properties.SA2_NAME16]);
       var data = array1;
 
       var width = 150;

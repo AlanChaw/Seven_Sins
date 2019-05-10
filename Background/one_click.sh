@@ -60,6 +60,6 @@ grunt couch-push
 
 
 echo "======generating views==================="
-http://localhost:5984/food_twitters/_design/designs/_view/agg_by_region?group=true
-http://localhost:5984/shopping_twitters/_design/designs/_view/agg_by_region?group=true
-http://localhost:5984/job_twitters/_design/designs/_view/agg_by_region?group=true
+curl http://localhost:5984/food_twitters/_design/designs/_view/agg_by_region?group=true
+curl http://localhost:5984/shopping_twitters/_design/designs/_view/agg_by_region?group=true
+curl http://localhost:5984/job_twitters/_design/designs/_view/agg_by_region?group=true

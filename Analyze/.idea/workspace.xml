@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2010ddee-ec48-4567-a97d-371ef72457af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FindWords/find_words.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FindWords/job_seeds.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FindWords/shopping_seeds.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process_all.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindWords/findwords.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindWords/findwords.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindWords/food_words.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preprocess.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocess.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Background/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/analysed_twitters/designs/_id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/analysed_twitters/designs/language" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/analysed_twitters/designs/views/agg_by_region/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/analysed_twitters/designs/views/agg_by_region/reduce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/aurin/Restaurant.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/aurin/myDesign/_id" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/aurin/myDesign/language" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/aurin/myDesign/views/agg_by_region/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Background/MyCouchdb/aurin/myDesign/views/agg_by_region/reduce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Background/one_click.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../Background/one_click.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,12 +164,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557465670673</updated>
-      <workItem from="1557465671991" duration="5492000" />
+      <workItem from="1557465671991" duration="5839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5492000" />
+    <option name="totallyTimeSpent" value="5839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1680" height="1027" extended-state="6" />

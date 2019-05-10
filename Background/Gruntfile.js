@@ -4,8 +4,9 @@ module.exports = function (grunt) {
       "couch-compile": {
         dbs: {
           files: {
-            "/tmp/aurin.json": "MyCouchdb/aurin/myDesign",
-            "/tmp/analysed_twitters.json": "MyCouchdb/analysed_twitters/designs"
+            "/tmp/food_twitters.json": "MyCouchdb/food_twitters/designs",
+            "/tmp/job_twitters.json": "MyCouchdb/job_twitters/designs",
+            "/tmp/shopping_twitters.json": "MyCouchdb/shopping_twitters/designs"
           }
         }
       },
@@ -16,8 +17,10 @@ module.exports = function (grunt) {
         },
         twitter: {
           files: {
-            "http://admin:123456@localhost:5984/aurin": "/tmp/aurin.json",
-            "http://admin:123456@localhost:5984/analysed_twitters": "/tmp/analysed_twitters.json"
+            // "http://admin:123456@localhost:5984/aurin": "/tmp/aurin.json",
+            "http://admin:123456@localhost:5984/food_twitters": "/tmp/food_twitters.json",
+            "http://admin:123456@localhost:5984/job_twitters": "/tmp/job_twitters.json",
+            "http://admin:123456@localhost:5984/shopping_twitters": "/tmp/shopping_twitters.json"
           }
         }
       }

@@ -19,8 +19,8 @@ curl -X PUT http://admin:123456@115.146.92.183:5984/_node/couchdb@127.0.0.1/_con
 curl -X PUT http://admin:123456@localhost:5984/geo_origin
 curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/geo_melb/origin_melb.json
 # curl -X POST "http://admin:123456@localhost:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/twitter/victoria.json
-curl -X PUT http://admin:123456@localhost:5984/aurin
-curl -X POST "http://admin:123456@localhost:5984/aurin/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/aurin/Restaurant.json
+# curl -X PUT http://admin:123456@localhost:5984/aurin
+# curl -X POST "http://admin:123456@localhost:5984/aurin/_bulk_docs " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/aurin/Restaurant.json
 
 
 
@@ -57,3 +57,9 @@ npm install grunt-couch --save-dev
 
 grunt couch-compile
 grunt couch-push
+
+
+echo "======generating views==================="
+http://localhost:5984/food_twitters/_design/designs/_view/agg_by_region?group=true
+http://localhost:5984/shopping_twitters/_design/designs/_view/agg_by_region?group=true
+http://localhost:5984/job_twitters/_design/designs/_view/agg_by_region?group=true

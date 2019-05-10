@@ -13,7 +13,7 @@ var json_mel = (function() {
     var json = null;
     $.ajax({
         async: false,
-        url: "http://115.146.92.183:5984/analysed_twitters/_design/designs/_view/agg_by_region?group=true",
+        url: "http://115.146.92.183:5984/food_twitters/_design/designs/_view/agg_by_region?group=true",
         dataType: "json",
         success: function (data) {
             json = data;
@@ -82,17 +82,17 @@ $.when(locate_data,json_mel).done(function() {
             color: 'white',
             dashArray: '3',
             fillOpacity: 0.7,
-            fillColor: getColor(dict_total[feature.properties.SA2_NAME16])
+            fillColor: getColor(dict_posi[feature.properties.SA2_NAME16]/dict_total[feature.properties.SA2_NAME16])
           };
         }
         function getColor(d) {
-          return d > 1000 ? '#800026' :
-              d > 500  ? '#BD0026' :
-              d > 200  ? '#E31A1C' :
-              d > 100  ? '#FC4E2A' :
-              d > 50   ? '#FD8D3C' :
-              d > 20   ? '#FEB24C' :
-              d > 10   ? '#FED976' :
+          return d > 0.8 ? '#800026' :
+              d > 0.7  ? '#BD0026' :
+              d > 0.6  ? '#E31A1C' :
+              d > 0.5  ? '#FC4E2A' :
+              d > 0.4   ? '#FD8D3C' :
+              d > 0.3   ? '#FEB24C' :
+              d > 0.2   ? '#FED976' :
                     '#FFEDA0';
         }
         function highlightFeature(e) {
@@ -144,7 +144,7 @@ $.when(locate_data,json_mel).done(function() {
     legend.onAdd = function (map) {
 
       var div = L.DomUtil.create('div', 'info legend'),
-        count = [0, 10, 20, 50, 100, 200, 500, 1000],
+        count = [0, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
         labels = [],
         from, to;
 
@@ -153,7 +153,7 @@ $.when(locate_data,json_mel).done(function() {
         to = count[i + 1];
 
         labels.push(
-          '<i style="background:' + getColor(from + 1) + '"></i> ' +
+          '<i style="background:' + getColor(from + 0.1) + '"></i> ' +
           from + (to ? '&ndash;' + to : '+'));
       }
 

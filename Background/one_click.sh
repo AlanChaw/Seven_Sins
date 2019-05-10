@@ -80,7 +80,7 @@ npm -v
   npm install grunt --save-dev
   npm install grunt-cli --save-dev
   npm install grunt-couch --save-dev
-}
+} &> /dev/null
 echo "=============Done==================="
 echo "  "
 
@@ -90,6 +90,9 @@ grunt couch-push
 
 
 echo "======generating views==================="
+{
 curl http://localhost:5984/food_twitters/_design/designs/_view/agg_by_region?group=true
 curl http://localhost:5984/shopping_twitters/_design/designs/_view/agg_by_region?group=true
 curl http://localhost:5984/job_twitters/_design/designs/_view/agg_by_region?group=true
+}&> /dev/null
+echo "=============Done==================="

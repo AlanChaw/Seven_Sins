@@ -1,0 +1,74 @@
+# create instances on nectar
+
+- name: create instance0
+  os_server:
+    name: "{{ instance_name0 }}"
+    image: "{{ instance_image }}"
+    key_name: "{{ instance_key_name }}"
+    flavor: "{{ instance_flavor }}"
+    availability_zone: "{{ availability_zone }}"
+    security_groups: "{{ sg_names }}"
+    auto_floating_ip: yes
+    wait: yes
+    timeout: 600
+    state: present
+  register: os_instance0
+
+- debug:
+    msg: "Instance {{ instance_name0 }} has been created. IP address is {{ os_instance0.openstack.public_v4 }}"
+  when: os_instance0.openstack is defined
+
+- name: create instance1
+  os_server:
+    name: "{{ instance_name1 }}"
+    image: "{{ instance_image }}"
+    key_name: "{{ instance_key_name }}"
+    flavor: "{{ instance_flavor }}"
+    availability_zone: "{{ availability_zone }}"
+    security_groups: "{{ sg_names }}"
+    auto_floating_ip: yes
+    wait: yes
+    timeout: 600
+    state: present
+  register: os_instance1
+
+- debug:
+    msg: "Instance {{ instance_name1 }} has been created. IP address is {{ os_instance1.openstack.public_v4 }}"
+  when: os_instance1.openstack is defined
+
+- name: create instance2
+  os_server:
+    name: "{{ instance_name2 }}"
+    image: "{{ instance_image }}"
+    key_name: "{{ instance_key_name }}"
+    flavor: "{{ instance_flavor }}"
+    availability_zone: "{{ availability_zone }}"
+    security_groups: "{{ sg_names }}"
+    auto_floating_ip: yes
+    wait: yes
+    timeout: 600
+    state: present
+  register: os_instance2
+
+- debug:
+    msg: "Instance {{ instance_name2 }} has been created. IP address is {{ os_instance2.openstack.public_v4 }}"
+  when: os_instance2.openstack is defined
+
+
+- name: output the IP to inventory file
+  vars:
+    instance_ip0: "{{ os_instance0.openstack.public_v4 }}"
+    instance_ip1: "{{ os_instance1.openstack.public_v4 }}"
+    instance_ip2: "{{ os_instance2.openstack.public_v4 }}"
+  template: src=inventory.ini.j2 dest=./inventory.ini
+
+# - name: output the IP to the masternode bash script
+#   vars:
+#     instance_ip0: "{{ os_instance0.openstack.public_v4 }}"
+#     instance_ip1: "{{ os_instance1.openstack.public_v4 }}"
+#   template: src=masternode.sh.j2 dest=./masternode.sh
+
+# - name: output the IP to the subnode bash script
+#   vars:
+#     instance_ip1: "{{ os_instance1.openstack.public_v4 }}"
+#   template: src=subnode.sh.j2 dest=./subnode.sh

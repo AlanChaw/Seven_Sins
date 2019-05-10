@@ -1,8 +1,9 @@
 #!/bin/bash
 
 echo "== Set variables =="
-declare -a nodes=({{ instance_ip0 }} {{ instance_ip1 }})
+declare -a nodes=({{ instance_ip0 }} {{ instance_ip1 }} {{ instance_ip2 }})
 export masternode={{ instance_ip0 }}
+{% raw %}
 export size=${#nodes[@]}
 export user=admin
 export password=123456
@@ -41,3 +42,4 @@ done
 
 echo "== Finish cluster =="
 curl -X POST -H "Content-Type: application/json" "http://${user}:${password}@${masternode}:5984/_cluster_setup" -d '{"action": "finish_cluster"}'
+{% endraw %}

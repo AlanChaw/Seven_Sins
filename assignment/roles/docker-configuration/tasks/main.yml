@@ -50,3 +50,7 @@
     groups: docker
   become: true
   with_items: "['ubuntu']"
+
+- name: pull the image of couchdb 2.3.0
+  become: yes
+  command: docker pull couchdb:2.3.0

@@ -2,7 +2,7 @@
 
 - name: create instance0
   os_server:
-    name: "{{ instance_name0 }}"
+    name: "{{ instance0_name }}"
     image: "{{ instance_image }}"
     key_name: "{{ instance_key_name }}"
     flavor: "{{ instance_flavor }}"
@@ -15,12 +15,12 @@
   register: os_instance0
 
 - debug:
-    msg: "Instance {{ instance_name0 }} has been created. IP address is {{ os_instance0.openstack.public_v4 }}"
+    msg: "Instance {{ instance0_name }} has been created. IP address is {{ os_instance0.openstack.public_v4 }}"
   when: os_instance0.openstack is defined
 
 - name: create instance1
   os_server:
-    name: "{{ instance_name1 }}"
+    name: "{{ instance1_name }}"
     image: "{{ instance_image }}"
     key_name: "{{ instance_key_name }}"
     flavor: "{{ instance_flavor }}"
@@ -33,12 +33,12 @@
   register: os_instance1
 
 - debug:
-    msg: "Instance {{ instance_name1 }} has been created. IP address is {{ os_instance1.openstack.public_v4 }}"
+    msg: "Instance {{ instance1_name }} has been created. IP address is {{ os_instance1.openstack.public_v4 }}"
   when: os_instance1.openstack is defined
 
 - name: create instance2
   os_server:
-    name: "{{ instance_name2 }}"
+    name: "{{ instance2_name }}"
     image: "{{ instance_image }}"
     key_name: "{{ instance_key_name }}"
     flavor: "{{ instance_flavor }}"
@@ -51,5 +51,5 @@
   register: os_instance2
 
 - debug:
-    msg: "Instance {{ instance_name2 }} has been created. IP address is {{ os_instance2.openstack.public_v4 }}"
+    msg: "Instance {{ instance2_name }} has been created. IP address is {{ os_instance2.openstack.public_v4 }}"
   when: os_instance2.openstack is defined

@@ -6,6 +6,6 @@
     src: ../../../web
     dest: /home/ubuntu/
 
-- name: run the webserver
+- name: run the apache webserver
   become: yes
   command: docker run -d -p 80:80 -v /home/ubuntu/web/visualization:/usr/local/apache2/htdocs --name webserver httpd

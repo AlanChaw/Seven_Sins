@@ -1,19 +1,19 @@
 [all_servers]
-{{ instance_ip0 }}
-{{ instance_ip1 }}
-{{ instance_ip2 }}
+{{ instance0_ip }}
+{{ instance1_ip }}
+{{ instance2_ip }}
 
 [masternode]
-{{ instance_ip0 }}
+{{ instance0_ip }}
 
 [subnode1]
-{{ instance_ip1 }}
+{{ instance1_ip }}
 
 [subnode2]
-{{ instance_ip2 }}
+{{ instance2_ip }}
 
 [webserver]
-{{ instance_ip0 }}
+{{ instance0_ip }}
 
 [all:vars]
 ansible_ssh_user=ubuntu

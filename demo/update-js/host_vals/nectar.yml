@@ -21,3 +21,5 @@ instance_name: demo
 instance_image: 394a1b97-a8d3-4593-aab0-8156f0dfeeca
 instance_key_name: keypair0
 instance_flavor: m1.small
+user: admin
+password: 123456

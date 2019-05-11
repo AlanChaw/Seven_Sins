@@ -1,4 +1,5 @@
 # upload the script and set the remote host to a masternode
+# then populate the data
 
 - name: upload the masternode script
   become: yes
@@ -7,3 +8,11 @@
 - name: execute the masternode script
   become: yes
   shell: /home/ubuntu/masternode.sh
+
+- name: upload a script to populate the data
+  become: yes
+  copy: src=./data-populate.sh dest=/home/ubuntu/ mode=0777
+
+- name: execute the data-populate script
+  become: yes
+  shell: /home/ubuntu/data-populate.sh

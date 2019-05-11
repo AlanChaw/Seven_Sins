@@ -1,0 +1,25 @@
+# render the templates
+
+- name: output the IP to inventory file
+  vars:
+    instance_ip0: "{{ os_instance0.openstack.public_v4 }}"
+    instance_ip1: "{{ os_instance1.openstack.public_v4 }}"
+    instance_ip2: "{{ os_instance2.openstack.public_v4 }}"
+  template: src=inventory.ini.j2 dest=./inventory.ini
+
+- name: output the IP to the masternode bash script
+  vars:
+    instance_ip0: "{{ os_instance0.openstack.public_v4 }}"
+    instance_ip1: "{{ os_instance1.openstack.public_v4 }}"
+    instance_ip2: "{{ os_instance2.openstack.public_v4 }}"
+  template: src=masternode.sh.j2 dest=./roles/couchdb-masternode/tasks/masternode.sh
+
+- name: output the IP to the subnode1 bash script
+  vars:
+    instance_ip1: "{{ os_instance1.openstack.public_v4 }}"
+  template: src=subnode.sh.j2 dest=./roles/couchdb-subnode1/tasks/subnode.sh
+
+- name: output the IP to the subnode2 bash script
+  vars:
+    instance_ip2: "{{ os_instance2.openstack.public_v4 }}"
+  template: src=subnode.sh.j2 dest=./roles/couchdb-subnode2/tasks/subnode.sh

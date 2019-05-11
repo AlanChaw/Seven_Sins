@@ -1,0 +1,5 @@
+# wait for the continuing tasks
+
+- name: wait for the port 22
+  become: yes
+  command: sleep 240

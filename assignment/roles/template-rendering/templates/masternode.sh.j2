@@ -18,7 +18,7 @@ docker exec ${cont} bash -c "echo \"-setcookie couchdb_cluster\" >> /opt/couchdb
 docker exec ${cont} bash -c "echo \"-name couchdb@${masternode}\" >> /opt/couchdb/etc/vm.args"
 
 docker restart mastercouchdb
-sleep 3
+sleep 15
 
 echo "== Enable cluster setup =="
 

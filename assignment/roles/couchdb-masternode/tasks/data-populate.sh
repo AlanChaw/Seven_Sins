@@ -1,10 +1,8 @@
-#!/bin/bash
+# check out git code to server (assume that docker and couchdb containers are deployed)
 
-export masternode=115.146.84.163
+export masternode=115.146.84.106
 export user=admin
 export password=123456
-
-# check out git code to server (assume that docker and couchdb containers are deployed)
 
 echo "=============checkout Background code from github==================="
 cd ~
@@ -28,9 +26,9 @@ echo "=============Done==================="
 echo "  "
 
 echo "=============Deploy geojson data==================="
-curl -X PUT http://${user}:${password}@masternode:5984/geo_origin
+curl -X PUT http://${user}:${password}@${masternode}:5984/geo_origin
 {
-  curl -X POST "http://${user}:${password}@masternode:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/geo_melb/origin_melb.json
+  curl -X POST "http://${user}:${password}@${masternode}:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/geo_melb/origin_melb.json
 }&> /dev/null
 echo "=============Done==================="
 echo "  "
@@ -38,13 +36,13 @@ echo "  "
 
 echo "=============replicate database from analyse server==================="
 
-curl -X PUT http://${user}:${password}@masternode:5984/food_twitters
-curl -X PUT http://${user}:${password}@masternode:5984/shopping_twitters
-curl -X PUT http://${user}:${password}@masternode:5984/job_twitters
+curl -X PUT http://${user}:${password}@${masternode}:5984/food_twitters
+curl -X PUT http://${user}:${password}@${masternode}:5984/shopping_twitters
+curl -X PUT http://${user}:${password}@${masternode}:5984/job_twitters
 {
-  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@${masternode}:5984/food_twitters","target":"http://${user}:${password}@masternode:5984/food_twitters"}' http://masternode:5984/_replicate
-  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@${masternode}:5984/shopping_twitters","target":"http://${user}:${password}@masternode:5984/shopping_twitters"}' http://masternode:5984/_replicate
-  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@${masternode}:5984/job_twitters","target":"http://${user}:${password}@masternode:5984/job_twitters"}' http://masternode:5984/_replicate
+  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/food_twitters","target":"http://${user}:${password}@${masternode}:5984/food_twitters"}' http://${user}:${password}@${masternode}:5984/_replicate
+  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/shopping_twitters","target":"http://${user}:${password}@${masternode}:5984/shopping_twitters"}' http://${user}:${password}@${masternode}:5984/_replicate
+  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/job_twitters","target":"http://${user}:${password}@${masternode}:5984/job_twitters"}' http://${user}:${password}@${masternode}:5984/_replicate
 } &> /dev/null
 
 echo "=============replication OK==================="
@@ -95,8 +93,8 @@ grunt couch-push
 
 echo "======generating views==================="
 {
-curl http://masternode:5984/food_twitters/_design/designs/_view/agg_by_region?group=true
-curl http://masternode:5984/shopping_twitters/_design/designs/_view/agg_by_region?group=true
-curl http://masternode:5984/job_twitters/_design/designs/_view/agg_by_region?group=true
+curl http://${masternode}:5984/food_twitters/_design/designs/_view/agg_by_region?group=true
+curl http://${masternode}:5984/shopping_twitters/_design/designs/_view/agg_by_region?group=true
+curl http://${masternode}:5984/job_twitters/_design/designs/_view/agg_by_region?group=true
 }&> /dev/null
 echo "=============Done==================="

@@ -18,15 +18,15 @@ docker exec ${cont} bash -c "echo \"-setcookie couchdb_cluster\" >> /opt/couchdb
 docker exec ${cont} bash -c "echo \"-name couchdb@${masternode}\" >> /opt/couchdb/etc/vm.args"
 
 docker restart mastercouchdb
-sleep 3
+sleep 15
 
 echo "== Enable cluster setup =="
 
 for (( i=0; i<${size}; i++ )); do
+    sleep 3
     curl -X PUT "http://${nodes[${i}]}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
     sleep 3
     curl -X PUT "http://${user}:${password}@${nodes[${i}]}:5984/_node/couchdb@${nodes[${i}]}/_config/chttpd/bind_address" --data '"0.0.0.0"'
-    sleep 2
 done
 
 echo "== Add nodes to cluster =="

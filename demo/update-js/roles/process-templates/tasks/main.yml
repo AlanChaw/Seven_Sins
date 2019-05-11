@@ -1,0 +1,9 @@
+- name: output the ip to the test.js
+  vars:
+    name: "WooD"
+    instance_ip: "xxx.yy.xx.yyy"
+  template:
+    - src=test.js.j2
+      dest=./test.js
+    - src=helloworld.js.j2
+      dest=./helloworld.txt

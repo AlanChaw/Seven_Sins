@@ -54,3 +54,7 @@
 - name: pull the image of couchdb 2.3.0
   become: yes
   command: docker pull couchdb:2.3.0
+
+- name: pull the image of apache
+  become: yes
+  command: docker pull httpd

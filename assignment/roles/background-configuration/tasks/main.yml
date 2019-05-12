@@ -19,6 +19,6 @@
     dest: /home/ubuntu/
     mode: 0777
 
-- name: execute the data-populate script
-  become: yes
-  shell: /home/ubuntu/data-populate.sh
+# - name: execute the data-populate script
+#   become: yes
+#   shell: /home/ubuntu/data-populate.sh

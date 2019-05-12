@@ -77,5 +77,9 @@ After finishing the configuration of the cluster, we can check the membership of
 
 ### Setup Apache Server
 
-### 
+We set the Apache as our web server to process the ask from front end. A Docker container is used for this background end confoguration. The container is running on masternode, and the characteristic of Docker promises that it will not conflict to other processes on the instance.
+
+We map the port 80 to allow the HTTP access, and map the web front end code to **apache/htdocs** which is the DocumentRoot of apache server.
+
+![apache](./images/apache.png)
 

@@ -71,7 +71,11 @@ The order of the execution of these 3 scripts is described as follows: first we 
 
 #### Outcome
 
+After finishing the configuration of the cluster, we can check the membership of the cluster via any IP of the instances. If the scripts are executed correctly, we can see that three nodes are in a same cluster.
+
+![cluster-outcome](./images/cluster-outcome.png)
+
 ### Setup Apache Server
 
-### Conclusion
+### 
 

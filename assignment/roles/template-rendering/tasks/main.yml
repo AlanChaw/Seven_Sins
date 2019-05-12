@@ -37,7 +37,7 @@
     instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
   template:
     src: data-populate.sh.j2
-    dest: ./roles/couchdb-masternode/tasks/data-populate.sh
+    dest: ./roles/background-configuration/tasks/data-populate.sh
 
 - name: output the IP to the food data javascript file
   vars:

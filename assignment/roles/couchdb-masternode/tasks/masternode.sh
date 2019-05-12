@@ -1,32 +1,29 @@
 #!/bin/bash
 
 echo "== Set variables =="
-declare -a nodes=(115.146.84.106 115.146.84.198 115.146.85.150)
-export masternode=115.146.84.106
-
-export size=${#nodes[@]}
+declare -a nodes=(115.146.84.213 115.146.84.218 115.146.84.106)
+export masternode=115.146.84.213
 export user=admin
 export password=123456
+
+export size=${#nodes[@]}
 
 echo "== Start the container =="
 docker run -d -p 5984:5984 -p 5986:5986 -p 4369:4369 -p 9100:9100 --name=mastercouchdb couchdb:2.3.0
 sleep 3
 
-declare -a cont=`docker ps -aqf "name=mastercouchdb"`
-
-docker exec ${cont} bash -c "echo \"-setcookie couchdb_cluster\" >> /opt/couchdb/etc/vm.args"
-docker exec ${cont} bash -c "echo \"-name couchdb@${masternode}\" >> /opt/couchdb/etc/vm.args"
+docker exec mastercouchdb bash -c "echo \"-setcookie couchdb_cluster\" >> /opt/couchdb/etc/vm.args"
+docker exec mastercouchdb bash -c "echo \"-name couchdb@${masternode}\" >> /opt/couchdb/etc/vm.args"
 
 docker restart mastercouchdb
 sleep 15
 
 echo "== Enable cluster setup =="
-
 for (( i=0; i<${size}; i++ )); do
-    sleep 3
     curl -X PUT "http://${nodes[${i}]}:5984/_node/_local/_config/admins/${user}" --data "\"${password}\""
     sleep 3
     curl -X PUT "http://${user}:${password}@${nodes[${i}]}:5984/_node/couchdb@${nodes[${i}]}/_config/chttpd/bind_address" --data '"0.0.0.0"'
+    sleep 2
 done
 
 echo "== Add nodes to cluster =="

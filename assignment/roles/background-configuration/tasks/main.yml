@@ -1,4 +1,6 @@
 # upload the front end code and run the webserver
+# make the cluster allow cross-domain access
+# then populate the data
 
 - name: upload the front end code
   become: yes
@@ -9,3 +11,14 @@
 - name: run the apache webserver
   become: yes
   command: docker run -d -p 80:80 -v /home/ubuntu/web/visualization:/usr/local/apache2/htdocs --name webserver httpd
+
+- name: upload a script to populate the data
+  become: yes
+  copy:
+    src: ./data-populate.sh
+    dest: /home/ubuntu/
+    mode: 0777
+
+- name: execute the data-populate script
+  become: yes
+  shell: /home/ubuntu/data-populate.sh

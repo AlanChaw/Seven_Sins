@@ -1,6 +1,6 @@
 # check out git code to server (assume that docker and couchdb containers are deployed)
 
-export masternode=115.146.84.106
+export masternode=115.146.84.213
 export user=admin
 export password=123456
 
@@ -40,9 +40,9 @@ curl -X PUT http://${user}:${password}@${masternode}:5984/food_twitters
 curl -X PUT http://${user}:${password}@${masternode}:5984/shopping_twitters
 curl -X PUT http://${user}:${password}@${masternode}:5984/job_twitters
 {
-  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/food_twitters","target":"http://${user}:${password}@${masternode}:5984/food_twitters"}' http://${masternode}:5984/_replicate
-  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/shopping_twitters","target":"http://${user}:${password}@${masternode}:5984/shopping_twitters"}' http://${masternode}:5984/_replicate
-  curl -X POST -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/job_twitters","target":"http://${user}:${password}@${masternode}:5984/job_twitters"}' http://${masternode}:5984/_replicate
+  curl -X POST http://${user}:${password}@${masternode}:5984/_replicate -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/food_twitters","target":"http://${user}:${password}@${masternode}:5984/food_twitters"}'
+  curl -X POST http://${user}:${password}@${masternode}:5984/_replicate -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/shopping_twitters","target":"http://${user}:${password}@${masternode}:5984/shopping_twitters"}'
+  curl -X POST http://${user}:${password}@${masternode}:5984/_replicate -H 'Content-Type: application/json' -d '{"source":"http://${user}:${password}@115.146.92.183:5984/job_twitters","target":"http://${user}:${password}@${masternode}:5984/job_twitters"}'
 } &> /dev/null
 
 echo "=============replication OK==================="

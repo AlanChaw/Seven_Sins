@@ -51,37 +51,36 @@ echo "  "
 # download nodejs code and install nodejs
 
 echo "=============Deploy nodejs and Grunt environment==================="
-{
-  cd ~
-  wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz
-  tar xf node-v10.15.3-linux-x64.tar.xz
+
+cd ~
+wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz
+tar xf node-v10.15.3-linux-x64.tar.xz
 
 
-  cd node-v10.15.3-linux-x64/
-  ./bin/node -v
+cd node-v10.15.3-linux-x64/
+./bin/node -v
 
-  sudo ln -s ~/node-v10.15.3-linux-x64/bin/node /usr/bin
-  sudo ln -s ~/node-v10.15.3-linux-x64/bin/npm /usr/bin
-} &> /dev/null
+ln -s ~/node-v10.15.3-linux-x64/bin/node /usr/bin
+ln -s ~/node-v10.15.3-linux-x64/bin/npm /usr/bin
 
 
 # check nodejs and npm ready
 echo "nodejs version"
-node -v
+sudo node -v
 echo "npm version"
-npm -v
+sudo npm -v
 
 # compile and push views to couchdb
 {
   cd ~
-  npm install -g grunt-cli
-  PATH=$PATH:$HOME/bin:/home/ubuntu/node-v10.15.3-linux-x64/bin
+  sudo npm install -g grunt-cli
+  PATH=$PATH:$HOME/bin:/home/ubuntu/node-v10.15.3-linux-x64/bin/
 
   cd /home/ubuntu/90024/Background
 
-  npm install grunt --save-dev
-  npm install grunt-cli --save-dev
-  npm install grunt-couch --save-dev
+  sudo npm install grunt --save-dev
+  sudo npm install grunt-cli --save-dev
+  sudo npm install grunt-couch --save-dev
 } &> /dev/null
 echo "=============Done==================="
 echo "  "

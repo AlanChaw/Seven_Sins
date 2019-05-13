@@ -63,7 +63,7 @@ chmod 777 process_all.sh
 ```  
 The analysis script will automatically classify the data for different scenarios and do the sentiment analysis task. The processed twitters will be output to the local CouchDB:  
 
-<img src="./Pictures/CouchDB_generated.png" height="50%" width="50%")>
+<img src="./Pictures/CouchDB_generated.png" height="50%" width="50%">
 
 
 This part usually takes about 20 minutes to run.
@@ -81,7 +81,7 @@ chmod 777 data-populate.sh
 The script will checkout the newest code from this respository, replicate twitter data from the stand-alone instance before, compile and push MapReduce views by Grunt. The Node.js and Grunt dependencies will also be installed by the script itself.  
 After the execution of this script, we can see that the MapReduce views has pushed to the databases successfully:
 
-<img src="./Pictures/Backend_result.png" height="50%" width="50%")>. 
+<img src="./Pictures/Backend_result.png" height="50%" width="50%"> 
 
 If we send a get request to the CouchDB cluster by:
 

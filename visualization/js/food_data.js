@@ -45,9 +45,18 @@ for (j = 0; j < json_mel["rows"].length; j++) {
 
 //CREAT MPA DATA Visualization
 
+function loadingEffect() {
+    var loading = $('#cssload-thecube');
+    loading.hide();
+    $(document).ajaxStart(function () {
+        loading.show();
+    }).ajaxStop(function () {
+        loading.hide();
+    });
+}
+loadingEffect();
 
-
-$.when(locate_data,json_mel).done(function() {
+$.when(locate_data).done(function() {
     var map = L.map('map')
         .setView([-37.8142, 144.9632], 12);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -225,15 +234,5 @@ $.when(locate_data,json_mel).done(function() {
       return div.node();
 
     }
-    function loadingEffect() {
-        var loading = $('#fountainG');
-        loading.hide();
-        $(document).ajaxStart(function () {
-            loading.show();
-        }).ajaxStop(function () {
-            loading.hide();
-        });
-    }
-    loadingEffect();
 
 });

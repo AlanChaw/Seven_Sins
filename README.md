@@ -18,7 +18,7 @@ We deployed a backup visulisation end which can be access by the link below (Onl
 
 The figure below displays the architecture of the system, the details of the system is introduced in the final report. 
 
-![System Architecture](./Pictures/Structure final.png)  
+![System Architecture](./Pictures/Structure_final.png)  
 
 ## Cluster Configuration (Ansible Playbook)   
 
@@ -48,7 +48,7 @@ chmod 777 process_all.sh
 ./process_all.sh  
 ```  
 The analysis script will automatically classify the data for different scenarios and do the sentiment analysis task. The processed twitters will be output to the local CouchDB:  
- ![CouchDB Generated](./Pictures/CouchDB generated.png)
+ ![CouchDB Generated](./Pictures/CouchDB_generated.png)  
 
 This part usually takes about 20 minutes to run.
 

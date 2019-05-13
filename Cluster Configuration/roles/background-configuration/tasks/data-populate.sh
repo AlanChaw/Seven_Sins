@@ -1,6 +1,6 @@
 # check out git code to server (assume that docker and couchdb containers are deployed)
 
-export masternode=115.146.84.42
+export masternode=115.146.84.216
 export user=admin
 export password=123456
 

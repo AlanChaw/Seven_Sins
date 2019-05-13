@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "== Set variables =="
-declare -a nodes=(115.146.84.42 115.146.84.198 115.146.84.218)
-export masternode=115.146.84.42
+declare -a nodes=(115.146.84.216 115.146.85.66 115.146.85.64)
+export masternode=115.146.84.216
 export user=admin
 export password=123456
 

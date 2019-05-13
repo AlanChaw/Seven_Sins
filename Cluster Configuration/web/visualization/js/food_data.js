@@ -1,6 +1,6 @@
 //LOAD GEOJSON DATA AND DETAIL DATA
 var locate_data = $.ajax({
-    url: "http://115.146.84.42:5984/geo_origin/geo_melb",
+    url: "http://115.146.84.216:5984/geo_origin/geo_melb",
 
     dataType: "json",
     success: console.log("County data successfully loaded."),
@@ -13,7 +13,7 @@ var json_mel = (function() {
     var json = null;
     $.ajax({
         async: false,
-        url: "http://115.146.84.42:5984/food_twitters/_design/designs/_view/agg_by_region?group=true",
+        url: "http://115.146.84.216:5984/food_twitters/_design/designs/_view/agg_by_region?group=true",
         dataType: "json",
         success: function (data) {
             json = data;

@@ -1,12 +1,28 @@
 ## Instruction Book
 
-- For the user who first use this scirpt, just execute the command
+- For the user who first use this scirpt, install the `ansible` and `Jinja2`  in advance
+
+For Linux User
+
+```bash
+sudo apt-get install ansible
+pip install Jinja2
+```
+
+For Mac User
+
+```bash
+brew install ansible
+pip install Jinja2
+```
+
+then just execute the command
 
 ```bash
 ./run.sh
 ```
 
-input the password for openstack-api, which is offered in `openstack-api-password-Group58.txt` and localhost, then just wait.
+Input the password for openstack-api, which is offered in `openstack-api-password-Group58.txt` and localhost, then just wait.
 
 - For the user who has created the instances and Docker environment, but get bug in the continuing steps, please open the `run.sh`, then comment the line 4, 7 and uncomment line 10, which makes the bash script's content is
 

@@ -1,7 +1,0 @@
-- name: upload a script
-  become: yes
-  copy: src=./hello.sh dest=/home/ubuntu/ mode=0777
-
-- name: execute a script
-  become: yes
-  shell: sh /home/ubuntu/hello.sh

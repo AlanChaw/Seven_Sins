@@ -1,6 +1,7 @@
 # COMP90024 - Team 58 - Seven Sins Project
 
-[TOC]
+[TOC]  
+
 
 ## Team Members
 

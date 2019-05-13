@@ -10,8 +10,6 @@ We just need to execute **run.sh**, then input the password of openstack API and
 
 ### Project Structure
 
-![structure](./images/structure.png)
-
 ```txt
 ├── Group58.pem
 ├── ansible.cfg
@@ -22,63 +20,11 @@ We just need to execute **run.sh**, then input the password of openstack API and
 ├── environment-reset.yml
 ├── inventory.ini
 ├── openstack-api-password-Group58.txt
-├── roles
-│   ├── background-configuration
-│   │   └── tasks
-│   │       ├── data-populate.sh
-│   │       └── main.yml
-│   ├── couchdb-masternode
-│   │   └── tasks
-│   │       ├── main.yml
-│   │       └── masternode.sh
-│   ├── couchdb-subnode1
-│   │   └── tasks
-│   │       ├── main.yml
-│   │       └── subnode1.sh
-│   ├── couchdb-subnode2
-│   │   └── tasks
-│   │       ├── main.yml
-│   │       └── subnode2.sh
-│   ├── docker-configuration
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── openstack-common
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── openstack-images
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── openstack-instance
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── openstack-security-groups
-│   │   └── tasks
-│   │       └── main.yml
-│   ├── reset
-│   │   └── tasks
-│   │       ├── main.yml
-│   │       └── stop-containers.sh
-│   ├── template-rendering
-│   │   ├── tasks
-│   │   │   └── main.yml
-│   │   └── templates
-│   │       ├── data-populate.sh.j2
-│   │       ├── food_data.js.j2
-│   │       ├── inventory.ini.j2
-│   │       ├── job_data.js.j2
-│   │       ├── masternode.sh.j2
-│   │       ├── shopping_data.js.j2
-│   │       ├── subnode1.sh.j2
-│   │       └── subnode2.sh.j2
-│   └── wait-for-port
-│       └── tasks
-│           └── main.yml
+├── roles/
 ├── run.sh
 ├── unimelb-comp90024-group-58-openrc.sh
-├── variables
-│   └── variables.yml
-└── web
-    └── visualization
+├── variables/
+└── web/
 ```
 
 ### Sepcific Process
@@ -102,21 +48,50 @@ In this step, we reference the demo in Lecture 5, which shows how to use Ansible
 
 We set a task for the instances to wait 240 seconds since when they have been created. The reason why we do this is to ensure the enough time before the port 22 of each instance has been opened. If the waiting time is too short, the ssh connection to the virtual machines may fail.
 
-![waiting](./images/waiting.png)
+```yaml
+# wait for port 22 open
+
+- name: wait for the port 22
+  become: yes
+  command: sleep 240
+```
 
 And we solve the problem that if we use Ansible to connect serveral instances by ssh for the first time, the prompts from serveral virtual machines to the user to input "yes/no" will conflict to each other, then fail the connection. We create an **ansible.cfg** file in the playbook directory, which can skip the prompt when connect instances via ssh.
 
-![ansible-cfg](./images/ansible-cfg.png)
+```cfg
+[defaults]
+host_key_checking=False
+```
 
 ### Render Template
 
 A very important step for the automation is that we need use some bash scripts to complete the operations. So we need put the IP address into these scripts. In addition, Ansible also need the IP address to tell which servers should complete the current tasks.
 
-![ip-in-script](./images/ip-in-script.png)
+```bash
+echo "== Set variables =="
+declare -a nodes=(115.146.84.163 115.146.84.106 115.146.84.198)
+export masternode=115.146.84.163
+export user=admin
+export password=123456
+```
 
 Since the floating IP address is allocated by the application of instances, we use some variables to record them and make some Jinja2 templates, after the applications of instance, the templates will be rendered as the real scripts, JavaScript codes and configuration files to relevant locations.
 
-![template-rendering](./images/template-rendering.png)
+```txt
+├── roles
+│   ├── template-rendering
+│   │   ├── tasks
+│   │   │   └── main.yml
+│   │   └── templates
+│   │       ├── data-populate.sh.j2
+│   │       ├── food_data.js.j2
+│   │       ├── inventory.ini.j2
+│   │       ├── job_data.js.j2
+│   │       ├── masternode.sh.j2
+│   │       ├── shopping_data.js.j2
+│   │       ├── subnode1.sh.j2
+│   │       └── subnode2.sh.j2
+```
 
 ### Install Docker
 
@@ -124,13 +99,43 @@ We use Docker as a supporting tool in this assignment. The most useful character
 
 In this step, we reference the demo in Lecture 5, which shows how to launch a Wordpress service by Docker via Ansible. And for the later step, we add three tasks for every instances in this role: add docker users, pull the image of CouchDB, pull the image of Apache.
 
-![three-tasks](./images/three-tasks.png)
+```yaml
+- name: adding docker users (for use without sudo)
+  user:
+    name: "ubuntu"
+    append: yes
+    groups: docker
+  become: true
+  with_items: "['ubuntu']"
+
+- name: pull the image of couchdb 2.3.0
+  become: yes
+  command: docker pull couchdb:2.3.0
+
+- name: pull the image of apache
+  become: yes
+  command: docker pull httpd
+```
 
 ### Setup CouchDB Cluster
 
 At first, we set up a demo of CouchDB cluster on two instances manually as a prototype, then extend it to 3 instances. At last, we try to use Ansible to complete the configuration of CouchDB cluster. Since we can use the bash scripts in the early steps, so our choice is to use Anisble unload the bash scripts to the database services, then execute them.
 
-![couchdb-cluster](./images/couchdb-cluster.png)
+```txt
+├── roles
+│   ├── couchdb-masternode
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── masternode.sh
+│   ├── couchdb-subnode1
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── subnode1.sh
+│   ├── couchdb-subnode2
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── subnode2.sh
+```
 
 The order of the execution of these 3 scripts is described as follows: first we use Jinja2 templates to render the floating IP to the scripts and upload them to corresponding servers, then we start the scripts on the subnodes. After that, the script on masternode will be executed.
 
@@ -152,5 +157,9 @@ We set the Apache as our web server to process the ask from front end. A Docker 
 
 We map the port 80 to allow the HTTP access, and map the web front end code to **apache/htdocs** which is the DocumentRoot of apache server.
 
-![apache](./images/apache.png)
+```yaml
+- name: run the apache webserver
+  become: yes
+  command: docker run -d -p 80:80 -v /home/ubuntu/web/visualization:/usr/local/apache2/htdocs --name webserver httpd
+```
 

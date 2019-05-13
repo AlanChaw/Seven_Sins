@@ -12,6 +12,75 @@ We just need to execute **run.sh**, then input the password of openstack API and
 
 ![structure](./images/structure.png)
 
+```txt
+├── Group58.pem
+├── ansible.cfg
+├── apply-instance.yml
+├── background-configuration.yml
+├── couchdb-cluster-setup.yml
+├── docker-configuration.yml
+├── environment-reset.yml
+├── inventory.ini
+├── openstack-api-password-Group58.txt
+├── roles
+│   ├── background-configuration
+│   │   └── tasks
+│   │       ├── data-populate.sh
+│   │       └── main.yml
+│   ├── couchdb-masternode
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── masternode.sh
+│   ├── couchdb-subnode1
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── subnode1.sh
+│   ├── couchdb-subnode2
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── subnode2.sh
+│   ├── docker-configuration
+│   │   └── tasks
+│   │       └── main.yml
+│   ├── openstack-common
+│   │   └── tasks
+│   │       └── main.yml
+│   ├── openstack-images
+│   │   └── tasks
+│   │       └── main.yml
+│   ├── openstack-instance
+│   │   └── tasks
+│   │       └── main.yml
+│   ├── openstack-security-groups
+│   │   └── tasks
+│   │       └── main.yml
+│   ├── reset
+│   │   └── tasks
+│   │       ├── main.yml
+│   │       └── stop-containers.sh
+│   ├── template-rendering
+│   │   ├── tasks
+│   │   │   └── main.yml
+│   │   └── templates
+│   │       ├── data-populate.sh.j2
+│   │       ├── food_data.js.j2
+│   │       ├── inventory.ini.j2
+│   │       ├── job_data.js.j2
+│   │       ├── masternode.sh.j2
+│   │       ├── shopping_data.js.j2
+│   │       ├── subnode1.sh.j2
+│   │       └── subnode2.sh.j2
+│   └── wait-for-port
+│       └── tasks
+│           └── main.yml
+├── run.sh
+├── unimelb-comp90024-group-58-openrc.sh
+├── variables
+│   └── variables.yml
+└── web
+    └── visualization
+```
+
 ### Sepcific Process
 
 1. Apply Instance
@@ -65,9 +134,11 @@ At first, we set up a demo of CouchDB cluster on two instances manually as a pro
 
 The order of the execution of these 3 scripts is described as follows: first we use Jinja2 templates to render the floating IP to the scripts and upload them to corresponding servers, then we start the scripts on the subnodes. After that, the script on masternode will be executed.
 
-#### Single Quotes, Double Quotes and Backslash
-
 #### Docker Port Problem
+
+The necessary port should be mapped to the corresponding port of the host machine. We get a bug that when the bash script which is uploaded by Ansible whose function is to run the masternode of the CouchDB cluster is executed, it have a probability that the step to sign up the username and password may fail. This is step is the first step after the the container of CouchDB is restarted. But if we log in the server and execute this script manually, this bug will not appear.
+
+We notice that everytime we get this bug, the node whose user and password can not be signed up is alway the master node. So we think it may be the reason that the master node is the last node to be restarted, so it do not get enough time to set up the container environment which is necessary for the continuing operation. So we make the bash srcipt sleep for 15 seconds to ensure the time for Docker container, then the bug is fixed.
 
 #### Outcome
 

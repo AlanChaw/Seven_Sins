@@ -10,7 +10,11 @@
 - [Potential Problems Solution](#Potential-Problems-Solution)
 
 ## Team Members
-
+**Zisu Geng** - zisu.geng@student.unimelb.edu.au  
+**Wenbin Cao** - wenbin.cao@student.unimelb.edu.au  
+**Haopeng Yan** - haopeng.yan@student.unimelb.edu.au  
+**Zhijun Chen** - zhijun.chen@student.unimelb.edu.au  
+**Zemin Yu** - zemin.yu@student.unimelb.edu.au  
 
 
 ## Introduction 

@@ -12,7 +12,7 @@ boundaryJS = json.load(open('D:/data/melb.json'))
 # all suburb names - list
 sub_list=[ele['properties']["SA2_NAME16"] for ele in boundaryJS["features"]]
 # target database object
-database= couchdb.Server("http://100.103.123.77:5984/")['temp']
+database= couchdb.Server("http://10.13.113.161:5984/")['temp3']
 # initialize apis
 key_secret_pairs=[];
 key_secret_pairs.append(('rcFJ0DzhHSDvTfgHK49WMCc9S','LZdhAUDVvnWcHHxUXTzYQF2f57KrNfmtEZHCmKzNZjxxsuG0Bp'))
@@ -80,7 +80,7 @@ def do100tweets(tweet_list):
                 database.save({"suburb":sub,"doc":tweetJS})
 
 # newer tweet has bigger id
-# api.search(since_id=null, max_id=newest_id, count=min(100,count))
+# api.search(since_id, max_id=newest_id, count=min(100,count))
 # return [maxID, down to about_count]
 # or [max_id, down to the id just bigger than since_id]
 # or [max_id, least_id within 10 days] when reaching the last-10-day limit
@@ -93,7 +93,6 @@ while len(tweet_list)>1:
         try: do100tweets(tweet_list)
         except: pass
         maxID  = tweet_list[-1].id
-
 
 
 

@@ -12,7 +12,7 @@ boundaryJS = json.load(open('D:/data/melb.json'))
 # all suburb names - list
 sub_list=[ele['properties']["SA2_NAME16"] for ele in boundaryJS["features"]]
 # target database object
-database= couchdb.Server("http://100.103.123.77:5984/")['temp']
+database= couchdb.Server("http://10.13.113.161:5984/")['temp3']
 
 def sub_name_normalisation(input_name):
     for standard_sub in sub_list:
@@ -53,7 +53,7 @@ def cor2suburb(coordinates):
     return None
 
 def do1tweet(json_tweet):
-    print(json_tweet["coordinates"],json_tweet["place"])
+    print(json_tweet)
     if json_tweet["place"]:
         if json_tweet["place"]["place_type"]=="neighborhood":
             old_name = json_tweet["place"]["name"]

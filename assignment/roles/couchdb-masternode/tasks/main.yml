@@ -2,7 +2,9 @@
 
 - name: upload the masternode script
   become: yes
-  copy: src=./masternode.sh dest=/home/ubuntu/ mode=0777
+  copy:
+    src: ./masternode.sh
+    dest: /home/ubuntu/ mode=0777
 
 - name: execute the masternode script
   become: yes

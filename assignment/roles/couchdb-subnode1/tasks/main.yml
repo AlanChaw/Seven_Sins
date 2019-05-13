@@ -2,7 +2,10 @@
 
 - name: upload the subnode script
   become: yes
-  copy: src=./subnode1.sh dest=/home/ubuntu/ mode=0777
+  copy:
+    src: ./subnode1.sh
+    dest: /home/ubuntu/
+    mode: 0777
 
 - name: execute the subnode script
   become: yes

@@ -2,7 +2,7 @@
 
 - [Team Members](#Team-Members)
 - [Introduction](#Introduction)
-- [Cluster Configuration \(With Ansible Playbook\)](#Cluster-Configuration-(With-Ansible-Playbook))
+- [Cluster Configuration by Ansible Playbook](#Cluster-Configuration-by-Ansible-Playbook)
 - [Data Harvest End](#Data-Harvest-End)
 - [Data Analysis Pipeline](#Data-Analysis-Pipeline)
 - [CouchDB Cluster Backend](#CouchDB-Cluster-Backend)
@@ -27,7 +27,7 @@ Following is the instruction to deploy our whole system, which including:
 - CouchDB Cluster Backend
 - Web-based Visualization End
 
-## Cluster Configuration (With Ansible Playbook) 
+## Cluster Configuration by Ansible Playbook
 
 For the user who first use this scirpt, install the `ansible` and `Jinja2`  in advance
 

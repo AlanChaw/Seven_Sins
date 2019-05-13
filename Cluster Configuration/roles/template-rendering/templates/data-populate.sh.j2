@@ -1,16 +1,14 @@
 # check out git code to server (assume that docker and couchdb containers are deployed)
 
-export masternode={{ instance0_ip }}
-export user={{ username }}
-export password={{ password }}
+export masternode=115.146.84.163
+export user=admin
+export password=123456
 {% raw %}
 echo "=============checkout Background code from github==================="
 cd ~
 sudo apt-get install git
 git init
 git clone http://AlanChaw:binbin1124@github.com/AlanChaw/90024.git
-cd 90024/
-git checkout origin/Background
 echo "=============Done==================="
 echo "  "
 
@@ -28,7 +26,7 @@ echo "  "
 echo "=============Deploy geojson data==================="
 curl -X PUT http://${user}:${password}@${masternode}:5984/geo_origin
 {
-  curl -X POST "http://${user}:${password}@${masternode}:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Background/MyCouchdb/geo_melb/origin_melb.json
+  curl -X POST "http://${user}:${password}@${masternode}:5984/geo_origin " --header "Content-Type: application/json" --data @/home/ubuntu/90024/Backend/MyCouchdb/geo_melb/origin_melb.json
 }&> /dev/null
 echo "=============Done==================="
 echo "  "
@@ -76,7 +74,7 @@ sudo npm -v
   sudo npm install -g grunt-cli
   PATH=$PATH:$HOME/bin:/home/ubuntu/node-v10.15.3-linux-x64/bin/
 
-  cd /home/ubuntu/90024/Background
+  cd /home/ubuntu/90024/Backend
 
   sudo npm install grunt --save-dev
   sudo npm install grunt-cli --save-dev

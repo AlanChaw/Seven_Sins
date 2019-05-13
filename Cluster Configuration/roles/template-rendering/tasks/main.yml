@@ -1,0 +1,61 @@
+# render the templates
+
+- name: output the IP to inventory file
+  vars:
+    instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
+    instance1_ip: "{{ os_instance1.openstack.public_v4 }}"
+    instance2_ip: "{{ os_instance2.openstack.public_v4 }}"
+  template:
+    src: inventory.ini.j2
+    dest: ./inventory.ini
+
+- name: output the IP to the masternode bash script
+  vars:
+    instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
+    instance1_ip: "{{ os_instance1.openstack.public_v4 }}"
+    instance2_ip: "{{ os_instance2.openstack.public_v4 }}"
+  template:
+    src: masternode.sh.j2
+    dest: ./roles/couchdb-masternode/tasks/masternode.sh
+
+- name: output the IP to the subnode1 bash script
+  vars:
+    instance1_ip: "{{ os_instance1.openstack.public_v4 }}"
+  template:
+    src: subnode1.sh.j2
+    dest: ./roles/couchdb-subnode1/tasks/subnode1.sh
+
+- name: output the IP to the subnode2 bash script
+  vars:
+    instance2_ip: "{{ os_instance2.openstack.public_v4 }}"
+  template:
+    src: subnode2.sh.j2
+    dest: ./roles/couchdb-subnode2/tasks/subnode2.sh
+
+- name: output the IP to the data-populate bash script
+  vars:
+    instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
+  template:
+    src: data-populate.sh.j2
+    dest: ./roles/background-configuration/tasks/data-populate.sh
+
+- name: output the IP to the food data javascript file
+  vars:
+    instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
+  template:
+    src: food_data.js.j2
+    dest: ./web/visualization/js/food_data.js
+
+- name: output the IP to the job data javascript file
+  vars:
+    instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
+  template:
+    src: job_data.js.j2
+    dest: ./web/visualization/js/job_data.js
+
+- name: output the IP to the shopping data javascript file
+  vars:
+    instance0_ip: "{{ os_instance0.openstack.public_v4 }}"
+  template:
+    src: shopping_data.js.j2
+    dest: ./web/visualization/js/shopping_data.js

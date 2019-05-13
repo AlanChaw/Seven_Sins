@@ -1,0 +1,60 @@
+# install dockers on the servers
+
+- name: uninstall old versions of docker
+  become: yes
+  apt:
+    name: ['docker', 'docker-engine', 'docker.io']
+    state: absent
+
+- name: install dependencies
+  become: yes
+  apt:
+    name: ['apt-transport-https', 'ca-certificates', 'curl', 'python-setuptools', 'python-pip', 'software-properties-common']
+    state: latest
+    install_recommends: no
+    update_cache: yes
+
+- name: add docker apt repository key
+  become: yes
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: add docker apt repository and update apt cache
+  become: yes
+  apt_repository:
+    repo: "deb https://download.docker.com/linux/{{ ansible_distribution|lower }} {{ ansible_distribution_release }} stable"
+    mode: '644'
+    update_cache: yes
+    state: present
+
+- name: install docker
+  become: yes
+  apt:
+    name: ['docker-ce']
+    state: latest
+    install_recommends: no
+    update_cache: yes
+
+- name: install docker-compose
+  become: yes
+  pip:
+    name: ['docker-compose']
+    version: 1.22.0
+    state: present
+
+- name: adding docker users (for use without sudo)
+  user:
+    name: "ubuntu"
+    append: yes
+    groups: docker
+  become: true
+  with_items: "['ubuntu']"
+
+- name: pull the image of couchdb 2.3.0
+  become: yes
+  command: docker pull couchdb:2.3.0
+
+- name: pull the image of apache
+  become: yes
+  command: docker pull httpd

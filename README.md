@@ -1,4 +1,3 @@
-
 # COMP90024 - Team 58 - Seven Sins Project  
 
 ## Team Members
@@ -115,6 +114,3 @@ We deployed a backup web visulisation end which can be access by the link below 
 
 
 ![Website](./Pictures/Website.png)
-
-
-

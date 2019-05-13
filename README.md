@@ -3,11 +3,11 @@
 - [Team Members](#Team-Members)
 - [Introduction](#Introduction)
 - [Cluster Configuration (With Ansible Playbook) ](#Cluster-Configuration-(With-Ansible-Playbook))
-- [Data Harvest End](#Data Harvest End)
-- [Data Analysis Pipeline](#Data Analysis Pipeline)
-- [CouchDB Cluster Backend](#CouchDB Cluster Backend)
-- [Web-based Visualization End](#Web-based Visualization End)
-- [Potential Problems Solution](#Potential Problems Solution)
+- [Data Harvest End](#Data-Harvest-End)
+- [Data Analysis Pipeline](#Data-Analysis-Pipeline)
+- [CouchDB Cluster Backend](#CouchDB-Cluster-Backend)
+- [Web-based Visualization End](#Web-based-Visualization-End)
+- [Potential Problems Solution](#Potential-Problems-Solution)
 
 ## Team Members
 

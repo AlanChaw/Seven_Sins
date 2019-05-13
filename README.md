@@ -1,5 +1,5 @@
 # COMP90024 - Team 58 - Seven Sins Project
-
+## Content  
 - [Team Members](#Team-Members)
 - [Introduction](#Introduction)
 - [Cluster Configuration by Ansible Playbook](#Cluster-Configuration-by-Ansible-Playbook)

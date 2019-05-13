@@ -6,6 +6,9 @@
 # install docker on the remote servers
 ansible-playbook -i inventory.ini -u ubuntu --key-file=./Group58 docker-configuration.yml
 
+# reset the enviroment of the remote servers
+# ansible-playbook -i inventory.ini -u ubuntu --key-file=./Group58 -v environment-reset.yml
+
 # setup couchdb cluster on database servers
 ansible-playbook -i inventory.ini -u ubuntu --key-file=./Group58 couchdb-cluster-setup.yml
 

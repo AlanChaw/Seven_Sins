@@ -1,6 +1,6 @@
 # check out git code to server (assume that docker and couchdb containers are deployed)
 
-export masternode=115.146.84.163
+export masternode=115.146.84.42
 export user=admin
 export password=123456
 
@@ -58,8 +58,8 @@ tar xf node-v10.15.3-linux-x64.tar.xz
 cd node-v10.15.3-linux-x64/
 ./bin/node -v
 
-ln -s ~/node-v10.15.3-linux-x64/bin/node /usr/bin
-ln -s ~/node-v10.15.3-linux-x64/bin/npm /usr/bin
+sudo ln -s ~/node-v10.15.3-linux-x64/bin/node /usr/bin
+sudo ln -s ~/node-v10.15.3-linux-x64/bin/npm /usr/bin
 
 
 # check nodejs and npm ready

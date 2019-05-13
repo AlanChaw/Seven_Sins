@@ -48,7 +48,7 @@ chmod 777 process_all.sh
 ./process_all.sh  
 ```  
 The analysis script will automatically classify the data for different scenarios and do the sentiment analysis task. The processed twitters will be output to the local CouchDB:  
- ![CouchDB Generated](./Pictures/CouchDB_generated.png)  
+![CouchDB Generated](./Pictures/CouchDB_generated.png)  
 
 This part usually takes about 20 minutes to run.
 

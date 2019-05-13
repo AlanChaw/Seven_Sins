@@ -1,5 +1,7 @@
 # COMP90024 - Team 58 - Seven Sins Project
 
+[TOC]
+
 ## Team Members
 
 
@@ -48,7 +50,18 @@ After the application of instances, you can find 3 new virtual machines on Necta
 
 ![instance](./Pictures/Instances.png)
 
+Then log into any node, and execute the command
+
+```bash
+curl -X GET http://admin:123456@localhost:5984/_membership
+```
+
+then the CouchDB cluster configuration can be checked.
+
+![CouchDB-Cluster](./Pictures/couchdb-cluster.png)
+
 ## Data Harvest End
+
 Both of the Data Harvest End and Data Analysis Pipeline has to be run on the "Preprocess" instance which is created before. Meanwhile, a stand-alone single node CouchDB is required to be deployed on this instance by docker:
 
 ``` bash

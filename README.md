@@ -49,6 +49,8 @@ brew install ansible
 pip install Jinja2
 ```
 
+**Flexible username and password for CouchDB cluster is supported**. If the user wants to use the customized user information, just modify `username` and `password` in the `variables/variables.yml`.
+
 then just execute the command
 
 ```bash

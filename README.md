@@ -83,6 +83,22 @@ We support two script to Harvest the twitter data, one is gathering data directl
 
 ``` bash
 cd ${Project_path}/Data_Harvest/
+
+'searcher.py' and 'streamer.py' need to be tested separately:
+In order to run 'searcher.py' and 'streamer.py' in a instance/computer, make sure you:
+
+1.	have installed Python 3.7 
+2.	have 'pip install tweepy'
+3.	have 'pip install couchdb'
+4.	have installed the shapely package(better to use binary installation):
+      1) Download the shapely whl file from:
+            https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely  (for windows), or
+            https://pypi.org/project/Shapely/#files    (for Linux System)
+      2) Pip install the binary file. For me is like 
+        (windows system, Pycharm IDE, Python 37, in the folder venv/Scripts): ‘pip install Shapely-1.6.4.post1-cp37-cp37m-win32.whl’
+5.	have downloaded the boundary json file ‘melb.json’  into the folder containing 'searcher.py' and 'streamer.py'.
+6.	Have successfully installed CouchDB in the instance/computer and created a database named – ‘temp’ in the local host.
+
 python3 searcher.py
 python3 streamer.py
 ```

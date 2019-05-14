@@ -8,11 +8,11 @@ import re
 
 # global variables:
 # boundary file - dictionary
-boundaryJS = json.load(open('D:/data/melb.json'))
+boundaryJS = json.load(open('melb.json'))
 # all suburb names - list
 sub_list=[ele['properties']["SA2_NAME16"] for ele in boundaryJS["features"]]
 # target database object
-database= couchdb.Server("http://10.13.113.161:5984/")['temp3']
+database= couchdb.Server("http://localhost:5984/")['temp']
 
 def sub_name_normalisation(input_name):
     for standard_sub in sub_list:

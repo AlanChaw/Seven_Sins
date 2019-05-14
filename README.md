@@ -91,13 +91,13 @@ In order to run 'searcher.py' and 'streamer.py' in a instance/computer, make sur
 2.	have 'pip install tweepy'
 3.	have 'pip install couchdb'
 4.	have installed the shapely package(better to use binary installation):
-      1) Download the shapely whl file from:
+      1) download the shapely whl file from:
             https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely  (for windows), or
             https://pypi.org/project/Shapely/#files    (for Linux System)
-      2) Pip install the binary file. For me is like 
+      2) pip install the binary file. For me is like 
         (windows system, Pycharm IDE, Python 37, in the folder venv/Scripts): ‘pip install Shapely-1.6.4.post1-cp37-cp37m-win32.whl’
 5.	have downloaded the boundary json file ‘melb.json’  into the folder containing 'searcher.py' and 'streamer.py'.
-6.	Have successfully installed CouchDB in the instance/computer and created a database named – ‘temp’ in the local host.
+6.	have successfully installed CouchDB in the instance/computer and created a database named – ‘temp’ in the local host.
 
 python3 searcher.py
 python3 streamer.py

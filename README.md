@@ -79,21 +79,19 @@ Both of the Data Harvest End and Data Analysis Pipeline has to be run on the "Pr
 
 ``` bash
 docker run -d -p 5984:5984 --name=subcouchdb1 couchdb:2.3.0
+curl -X PUT http://${username}:${passwd}@localhost:5984/temp
 ```
 
 We support two scripts to harvest the twitter data 'searcher.py' and 'streamer.py', and they should be tested separate from the system:
 In order to run 'searcher.py' and 'streamer.py' in a instance/computer, make sure you have down the followings before:
-1.	have installed Python 3.7 
-2.	have 'pip install tweepy'
-3.	have 'pip install couchdb'
-4.	have installed the shapely package(better to use binary installation):
-      1) download the shapely whl file from:
-            https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely  (for windows), or
-            https://pypi.org/project/Shapely/#files    (for Linux System)
-      2) pip install the binary file. For me is like 
-        (windows system, Pycharm IDE, Python 37, in the folder venv/Scripts): ‘pip install Shapely-1.6.4.post1-cp37-cp37m-win32.whl’
-5.	have downloaded the boundary json file ‘melb.json’  into the folder containing 'searcher.py' and 'streamer.py'.
-6.	have successfully installed CouchDB in the instance/computer and created a database named – ‘temp’ in the local host.
+``` bash
+pip install tweepy
+pip install couchdb
+pip install Shapely
+
+```
+
+Then run the followings: 
 ``` bash
 cd ${Project_path}/Data_Harvest/
 python3 searcher.py

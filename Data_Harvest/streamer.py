@@ -12,7 +12,12 @@ boundaryJS = json.load(open('melb.json'))
 # all suburb names - list
 sub_list=[ele['properties']["SA2_NAME16"] for ele in boundaryJS["features"]]
 # target database object
-database= couchdb.Server("http://localhost:5984/")['temp']
+server = couchdb.Server('http://admin:123456@localhost:5984/')
+try:
+    database = server.create('temp')
+except Exception as e:
+    server.delete('temp')
+    database = server.create('temp')
 
 def sub_name_normalisation(input_name):
     for standard_sub in sub_list:

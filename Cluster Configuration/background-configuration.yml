@@ -1,0 +1,9 @@
+# setup the webserver and modify the configuration of cluster
+# then populate the database
+
+- hosts: webserver
+  remote_user: ubuntu
+  gather_facts: true
+
+  roles:
+    - role: background-configuration

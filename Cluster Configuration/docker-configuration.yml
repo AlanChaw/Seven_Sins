@@ -1,0 +1,11 @@
+# install the docker on the servers
+
+- hosts: all_servers
+  remote_user: ubuntu
+  gather_facts: true
+  pre_tasks:
+    - name: 'install python2'
+      raw: sudo apt-get update; sudo apt-get -y install python
+
+  roles:
+    - role: docker-configuration

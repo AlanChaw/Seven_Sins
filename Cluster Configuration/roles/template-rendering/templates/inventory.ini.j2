@@ -1,0 +1,20 @@
+[all_servers]
+{{ instance0_ip }}
+{{ instance1_ip }}
+{{ instance2_ip }}
+
+[masternode]
+{{ instance0_ip }}
+
+[subnode1]
+{{ instance1_ip }}
+
+[subnode2]
+{{ instance2_ip }}
+
+[webserver]
+{{ instance0_ip }}
+
+[all:vars]
+ansible_ssh_user=ubuntu
+ansible_ssh_private_key_file=./Group58.pem

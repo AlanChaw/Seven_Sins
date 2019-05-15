@@ -1,0 +1,12 @@
+# upload the script and set the remote host to a masternode
+
+- name: upload the masternode script
+  become: yes
+  copy:
+    src: ./masternode.sh
+    dest: /home/ubuntu/
+    mode: 0777
+
+- name: execute the masternode script
+  become: yes
+  shell: /home/ubuntu/masternode.sh

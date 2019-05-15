@@ -8,11 +8,16 @@ import re
 
 # global variables:
 # boundary file - dictionary
-boundaryJS = json.load(open('D:/data/melb.json'))
+boundaryJS = json.load(open('melb.json'))
 # all suburb names - list
 sub_list=[ele['properties']["SA2_NAME16"] for ele in boundaryJS["features"]]
 # target database object
-database= couchdb.Server("http://10.13.113.161:5984/")['temp3']
+server = couchdb.Server('http://admin:123456@localhost:5984/')
+try:
+    database = server.create('temp')
+except Exception as e:
+    server.delete('temp')
+    database = server.create('temp')
 
 def sub_name_normalisation(input_name):
     for standard_sub in sub_list:
@@ -53,7 +58,7 @@ def cor2suburb(coordinates):
     return None
 
 def do1tweet(json_tweet):
-    print("get one tweet, suburb is:(empty means no suburb info)")
+    print("get one current tweet,suburb is below:(may be empty)")
     if json_tweet["place"]:
         if json_tweet["place"]["place_type"]=="neighborhood":
             old_name = json_tweet["place"]["name"]

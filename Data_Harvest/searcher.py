@@ -8,11 +8,18 @@ import re
 
 # global variables:
 # boundary file - dictionary
-boundaryJS = json.load(open('D:/data/melb.json'))
+boundaryJS = json.load(open('melb.json'))
 # all suburb names - list
 sub_list=[ele['properties']["SA2_NAME16"] for ele in boundaryJS["features"]]
+
 # target database object
-database= couchdb.Server("http://10.13.113.161:5984/")['temp3']
+server = couchdb.Server('http://admin:123456@localhost:5984/')
+try:
+    database = server.create('temp')
+except Exception as e:
+    server.delete('temp')
+    database = server.create('temp')
+
 # initialize apis
 key_secret_pairs=[];
 key_secret_pairs.append(('rcFJ0DzhHSDvTfgHK49WMCc9S','LZdhAUDVvnWcHHxUXTzYQF2f57KrNfmtEZHCmKzNZjxxsuG0Bp'))

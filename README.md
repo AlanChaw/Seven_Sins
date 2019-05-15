@@ -79,7 +79,6 @@ Both of the Data Harvest End and Data Analysis Pipeline has to be run on the "Pr
 
 ``` bash
 docker run -d -p 5984:5984 --name=subcouchdb1 couchdb:2.3.0
-curl -X PUT http://${username}:${passwd}@localhost:5984/temp
 ```
 
 We support two scripts to harvest the twitter data 'searcher.py' and 'streamer.py', and they should be tested separate from the system:

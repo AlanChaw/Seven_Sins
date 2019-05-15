@@ -58,7 +58,7 @@ def cor2suburb(coordinates):
     return None
 
 def do1tweet(json_tweet):
-    print(json_tweet)
+    print("get one current tweet,suburb is below:(may be empty)")
     if json_tweet["place"]:
         if json_tweet["place"]["place_type"]=="neighborhood":
             old_name = json_tweet["place"]["name"]

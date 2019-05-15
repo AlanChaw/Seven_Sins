@@ -1,4 +1,4 @@
-# COMP90024 - Team 58 - Seven Sins Project
+# COMP90024 - Team 58 - Project Repo
 ## Content  
 - [Team Members](#Team-Members)
 - [Introduction](#Introduction)

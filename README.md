@@ -85,9 +85,9 @@ curl -X PUT http://${username}:${passwd}@localhost:5984/temp
 We support two scripts to harvest the twitter data 'searcher.py' and 'streamer.py', and they should be tested separate from the system:
 In order to run 'searcher.py' and 'streamer.py' in a instance/computer, make sure you have down the followings before:
 ``` bash
-pip install tweepy
-pip install couchdb
-pip install Shapely
+pip install --user tweepy
+pip install --user couchdb
+pip install --user Shapely
 
 ```
 
